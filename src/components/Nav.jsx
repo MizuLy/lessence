@@ -12,10 +12,19 @@ export default function Nav() {
       <nav className="bg-white max-w-full h-[80px] hidden lg:flex justify-center items-center shadow-xl">
         {/* Logo */}
         <div className="w-[25%] flex justify-center">
-          <Link to={"/#slide"}>
-            <h1 className="text-4xl font-bold font-josefinsans">AppAnh</h1>
+          <Link to={"/#slide"} className="flex items-center gap-2">
+            <div className="w-[80px] h-[80px] overflow-hidden">
+              <img
+                src="/Logo/AppAnh2.png"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-8">
+              AppAnh
+            </h1>
           </Link>
         </div>
+
         {/* Menu */}
         <div className="w-[25%] flex justify-center">
           <ul className="flex gap-10">
@@ -58,8 +67,16 @@ export default function Nav() {
       <nav className="bg-white w-full h-[80px] shadow-xl lg:hidden flex justify-center items-center">
         {/* Logo */}
         <div className="w-[50%] h-full flex justify-start items-center px-4">
-          <Link to={"/"}>
-            <h1 className="text-4xl font-bold font-josefinsans">AppAnh</h1>
+          <Link to={"/#slide"} className="flex items-center gap-2">
+            <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
+              <img
+                src="/Logo/AppAnh2.png"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-5 lg:pt-8">
+              AppAnh
+            </h1>
           </Link>
         </div>
         <div className="w-[50%] h-full flex justify-end items-center px-4">
@@ -77,8 +94,16 @@ export default function Nav() {
           {/* Logo */}
           <div className="w-full h-[90px]">
             <div className="w-full h-full flex justify-start items-center px-4">
-              <Link to={"/#slide"}>
-                <h1 className="text-4xl font-bold font-josefinsans">AppAnh</h1>
+              <Link to={"/#slide"} className="flex items-center gap-2">
+                <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
+                  <img
+                    src="/Logo/AppAnh2.png"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-5 lg:pt-8">
+                  AppAnh
+                </h1>
               </Link>
             </div>
           </div>
