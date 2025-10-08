@@ -29,16 +29,16 @@ export default function About() {
         journey, not just a chore.
       </p>
       <br />
-      <div className="w-full my-2">
+      <div className="w-full my-2 flex justify-center items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {gridImg.map((i) => (
             <div
               key={i}
-              className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+              className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 max-w-[400px]"
             >
               <img
                 src={i}
-                className="w-full h-72 md:h-80 lg:h-[22rem] object-cover"
+                className="w-full h-72 md:h-80 lg:h-[22rem] object-cover max-w-[400px]"
               />
             </div>
           ))}
