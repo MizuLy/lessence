@@ -8,11 +8,8 @@ export default function Nav() {
   const [menu, setMenu] = useState(true);
   return (
     <div>
-      <div className="bg-black flex justify-center h-[20px]">
-        <p className="text-white">Discover our amazing collection</p>
-      </div>
       {/* Big */}
-      <nav className="hover:bg-white max-w-full h-[80px] hidden lg:flex justify-center items-center shadow-xl">
+      <nav className="hover:bg-white max-w-full h-[100px] hidden lg:flex justify-center items-center shadow-xl">
         {/* Logo */}
         <div className="w-[25%] flex justify-center">
           <Link to={"/#slide"} className="flex items-center gap-2">
@@ -56,16 +53,20 @@ export default function Nav() {
         <div className="w-[25%] flex justify-center gap-10">
           <div className="text-xl font-semibold hover:text-purple-200 duration-150 cursor-pointer flex gap-5 items-center justify-center">
             <IoCart size={30} />
-            <p>Cart</p>
           </div>
 
           <div className="text-xl font-semibold hover:text-purple-200 duration-150 cursor-pointer flex gap-5 items-center justify-center">
             <FaUser size={25} />
-            <p>Account</p>
           </div>
         </div>
       </nav>
 
+      {/* Announcer */}
+      <div className="bg-black flex justify-center h-[20px] lg:hidden">
+        <p className="text-white animate-pulse">
+          Discover our amazing collection
+        </p>
+      </div>
       {/* Small */}
       <nav className="bg-white w-full h-[80px] shadow-xl lg:hidden flex justify-center items-center">
         {/* Logo */}
@@ -95,7 +96,7 @@ export default function Nav() {
           }`}
         >
           {/* Logo */}
-          <div className="w-full h-[90px]">
+          <div className="w-full h-[120px]">
             <div className="w-full h-full flex justify-start items-center px-4">
               <Link to={"/#slide"} className="flex items-center gap-2">
                 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
