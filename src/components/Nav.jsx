@@ -8,15 +8,18 @@ export default function Nav() {
   const [menu, setMenu] = useState(true);
   return (
     <div>
+      <div className="bg-black flex justify-center h-[20px]">
+        <p className="text-white">Discover our amazing collection</p>
+      </div>
       {/* Big */}
-      <nav className="bg-white max-w-full h-[80px] hidden lg:flex justify-center items-center shadow-xl">
+      <nav className="hover:bg-white max-w-full h-[80px] hidden lg:flex justify-center items-center shadow-xl">
         {/* Logo */}
         <div className="w-[25%] flex justify-center">
           <Link to={"/#slide"} className="flex items-center gap-2">
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
                 src="/Logo/AppAnh.png"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover invert-0"
               />
             </div>
             <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-8">

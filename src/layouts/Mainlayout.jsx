@@ -9,7 +9,7 @@ export default function Mainlayout() {
         <Nav />
       </div>
 
-      <div className="flex-grow pt-[80px]">
+      <div className="flex-grow pt-[100px]">
         <Mainrouter />
       </div>
 
