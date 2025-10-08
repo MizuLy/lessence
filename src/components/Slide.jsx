@@ -16,7 +16,6 @@ export default function App() {
     "https://img.freepik.com/free-photo/beautiful-blonde-woman-blue-light_23-2149478931.jpg",
     "https://wallpaperbat.com/img/39542521-90s-fashion-photography.jpg",
     "https://wallpaperbat.com/img/39542569-fashion-photographer-takays-new-book.jpg",
-    "https://wallpaperbat.com/img/39542569-fashion-photographer-takays-new-book.jpg",
   ];
   return (
     <>
