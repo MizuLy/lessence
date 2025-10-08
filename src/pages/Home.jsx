@@ -3,6 +3,8 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Hero from "../components/Hero";
+import Brand from "./Brand";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -16,13 +18,18 @@ export default function Home() {
     }
   }, [hash]);
   return (
-    <div id="slide" className="min-h-screen px-10 sm:px-20 md:px-40">
-      <Slide />
-      <div id="about" className="min-h-screen py-20 px-10 sm:px-20 md:px-40">
+    <div id="slide" className="min-h-screen">
+      <Hero />
+
+      <div id="brand">
+        <Brand />
+      </div>
+
+      <div id="about">
         <About />
       </div>
 
-      <div id="contact" className="min-h-screen py-20 px-10 sm:px-20 md:px-40">
+      <div id="contact" className="pt-20 h-[80vh]">
         <Contact />
       </div>
     </div>

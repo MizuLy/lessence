@@ -1,0 +1,26 @@
+export default function Hero() {
+  return (
+    <div className="w-full min-h-screen">
+      <div className="w-full h-[900px] overflow-hidden relative">
+        <img
+          src="/Model/modelinblack.jpg"
+          alt=""
+          className="object-cover w-full h-full"
+        />
+
+        <div className="absolute top-[35%] left-[50%] z-[10]">
+          <h1 className="text-4xl lg:text-6xl font-bold text-white">
+            Elevate Your Style. Embrace Your Beauty.
+          </h1>
+          <p className="mt-4 text-lg text-gray-300">
+            Discover the latest trends in fashion and beauty — all in one place.
+            Shop exclusive collections and express your unique look.
+          </p>
+          <button className="px-4 py-2 bg-gray-300 rounded-full mt-6 hover:bg-gray-400 duration-150 text-lg transition">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
