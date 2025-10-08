@@ -15,7 +15,7 @@ export default function Nav() {
           <Link to={"/#slide"} className="flex items-center gap-2">
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
-                src="/Logo/AppAnh2.png"
+                src="/Logo/AppAnh.png"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -70,7 +70,7 @@ export default function Nav() {
           <Link to={"/#slide"} className="flex items-center gap-2">
             <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
               <img
-                src="/Logo/AppAnh2.png"
+                src="/Logo/AppAnh.png"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -97,7 +97,7 @@ export default function Nav() {
               <Link to={"/#slide"} className="flex items-center gap-2">
                 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
                   <img
-                    src="/Logo/AppAnh2.png"
+                    src="/Logo/AppAnh.png"
                     className="w-full h-full object-cover"
                   />
                 </div>
