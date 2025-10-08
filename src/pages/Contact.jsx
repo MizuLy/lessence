@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="text-center py-5 lg:px-20 flex flex-col justify-center items-center">
-      <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6">
+      <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6 underline">
         Contact us through
       </h1>
       <div className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8">
@@ -15,7 +15,7 @@ export default function Contact() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full border px-4 py-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-300 transition"
+              className="w-full border px-4 py-2 rounded-xl outline-none"
             />
           </div>
 
@@ -26,7 +26,7 @@ export default function Contact() {
             <textarea
               rows={5}
               placeholder="Write your message..."
-              className="w-full border px-4 py-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-300 transition"
+              className="w-full border px-4 py-2 rounded-xl outline-none"
             ></textarea>
           </div>
         </div>

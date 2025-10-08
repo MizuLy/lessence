@@ -70,8 +70,16 @@ export default function Nav() {
             <div className="flex flex-col justify-center">
               <ul>
                 <li className="font-bold border-b-2 b">POPULAR NOW</li>
-                <li className="hover:font-semibold pt-2">MEN</li>
-                <li className="hover:font-semibold pt-2">WOMEN</li>
+                <li className="pt-2">
+                  <span className="hover:font-semibold cursor-pointer">
+                    MEN
+                  </span>
+                </li>
+                <li className="pt-2">
+                  <span className="hover:font-semibold cursor-pointer">
+                    WOMEN
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -128,8 +136,16 @@ export default function Nav() {
             <div className="flex flex-col justify-center">
               <ul>
                 <li className="font-bold border-b-2 b">POPULAR NOW</li>
-                <li className="hover:font-semibold pt-2">MEN</li>
-                <li className="hover:font-semibold pt-2">WOMEN</li>
+                <li className="pt-2">
+                  <span className="hover:font-semibold cursor-pointer">
+                    MEN
+                  </span>
+                </li>
+                <li className="pt-2">
+                  <span className="hover:font-semibold cursor-pointer">
+                    WOMEN
+                  </span>
+                </li>
               </ul>
             </div>
           </div>

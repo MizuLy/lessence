@@ -5,7 +5,7 @@ export default function About() {
     "https://media.istockphoto.com/id/882060132/photo/interior-of-modern-fashion-shop.jpg?s=612x612&w=0&k=20&c=GKrywt8nfPN3vIb4FPcbdS3Jvnzis1-3xkt6cbA7xgc=",
   ];
   return (
-    <div className="text-center py-10 lg:px-20">
+    <div className="text-center py-10 px-16 lg:px-20">
       <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6">
         About Us
       </h1>

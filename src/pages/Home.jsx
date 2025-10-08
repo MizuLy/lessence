@@ -18,10 +18,12 @@ export default function Home() {
     }
   }, [hash]);
   return (
-    <div id="slide" className="min-h-screen">
-      <Hero />
+    <div id="slide">
+      <div className="min-h-screen">
+        <Hero />
+      </div>
 
-      <div id="brand">
+      <div id="brand" className="min-h-[400px]">
         <Brand />
       </div>
 
@@ -29,7 +31,7 @@ export default function Home() {
         <About />
       </div>
 
-      <div id="contact" className="pt-20 h-[80vh]">
+      <div id="contact" className="pt-20 h-[70vh]">
         <Contact />
       </div>
     </div>
