@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function YSL() {
-  return (
-    <div>
-      YSL
-    </div>
-  )
+  return <div className="h-[100vh] pt-10">YSL</div>;
 }
