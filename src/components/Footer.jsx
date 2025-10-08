@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <div className="w-full bg-black text-white flex flex-wrap py-10">
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
         <h1 className="text-3xl font-josefinsans mb-3">
-          <span className="font-bold">M</span>izu
+          <Link to={"/#slide"}>
+            <span className="font-bold">App</span>Anh
+          </Link>
         </h1>
         <p>Entry Level Web Developer</p>
       </div>

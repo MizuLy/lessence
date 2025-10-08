@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Brand() {
-  const brandLogo = [
-    "chanel.png",
-    "dior.png",
-    "gucci.png",
-    "lv.png",
-    "ysl.png",
+  const brands = [
+    { name: "chanel", logo: "chanel.png" },
+    { name: "dior", logo: "dior.png" },
+    { name: "gucci", logo: "gucci.png" },
+    { name: "lv", logo: "lv.png" },
+    { name: "ysl", logo: "ysl.png" },
   ];
 
   return (
@@ -14,16 +16,16 @@ export default function Brand() {
       </h1>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-        {brandLogo.map((i) => (
-          <div
-            key={i}
-            className="w-[120px] h-[120px] flex justify-center items-center overflow-hidden shadow-lg rounded-xl p-5 hover:scale-105 duration-150 bg-white"
-          >
-            <img
-              src={`/Logo/${i}`}
-              className="object-contain max-w-full max-h-full"
-            />
-          </div>
+        {brands.map((brand) => (
+          <Link key={brand.name} to={`/brand/${brand.name}`}>
+            <div className="w-[120px] h-[120px] flex justify-center items-center overflow-hidden shadow-lg rounded-xl p-5 hover:scale-105 duration-150 bg-white">
+              <img
+                src={`/Logo/${brand.logo}`}
+                className="object-contain max-w-full max-h-full"
+                alt={`${brand.name} logo`}
+              />
+            </div>
+          </Link>
         ))}
       </div>
     </div>

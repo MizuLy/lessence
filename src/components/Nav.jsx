@@ -17,7 +17,7 @@ export default function Nav() {
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
                 src="/Logo/AppAnh.png"
-                className="w-full h-full object-cover invert-0"
+                className="w-full h-full object-cover"
               />
             </div>
             <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-8">
