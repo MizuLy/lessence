@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="max-w-screen max-h-screen pb-10">
       <div className="w-full h-[900px] overflow-hidden relative">
         <img
           src="/Model/modelinblack.jpg"
