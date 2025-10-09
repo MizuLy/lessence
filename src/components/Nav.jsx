@@ -8,6 +8,10 @@ import { IoMenu, IoClose, IoCartOutline } from "react-icons/io5";
 export default function Nav() {
   const [menu, setMenu] = useState(true);
   const [search, setSearch] = useState(true);
+  const [cart, setCart] = useState(true);
+
+  const [activePanel, setActivePanel] = useState(null);
+  const [count, setCount] = useState(1);
   return (
     <div>
       {/* Big */}
@@ -59,7 +63,7 @@ export default function Nav() {
             <IoIosSearch size={25} />
           </div>
 
-          {/* Search Contain */}
+          {/* Search Open */}
           <div
             className={`bg-white flex flex-col justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[80%] md:w-[40%] h-[100vh] transition-all duration-150 ${
               search ? "-translate-x-full" : "translate-x-0"
@@ -91,9 +95,69 @@ export default function Nav() {
             </div>
           </div>
 
-          <div className="text-xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
+          {/* Close Search */}
+          <div
+            onClick={() => setSearch(!search)}
+            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+              search ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
+
+          <div
+            onClick={() => setCart(!cart)}
+            className="text-xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
+          >
             <IoCartOutline size={25} />
           </div>
+
+          {/* Cart Open */}
+          <div
+            className={`bg-white flex flex-col px-20 justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[80%] md:w-[40%] h-[100vh] transition-all duration-150 ${
+              cart ? "-translate-x-full" : "translate-x-0"
+            }`}
+          >
+            <h1 className="text-3xl font-semibold pb-5">Your Cart</h1>
+
+            {/* Item 1 */}
+            <div className=" w-full h-[140px] p-4 flex space-x-4 shadow-lg rounded-xl">
+              <div className="w-[20%] h-full overflow-hidden rounded-xl shadow-md">
+                <img
+                  src="/Model/modelinblack.jpg"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-[80%] h-full flex flex-col items-start p-4">
+                <div>
+                  <h1 className="font-semibold text-xl">Black Dress</h1>
+                  <p className="text-md">Quantity: 3</p>
+                </div>
+
+                <div className="flex space-x-5 text-xl py-2">
+                  <button
+                    className="w-10 h-10 rounded-xl shadow-md"
+                    onClick={() => count > 0 && setCount(count - 1)}
+                  >
+                    -
+                  </button>
+                  <p className="pt-2">{count}</p>
+                  <button
+                    className="w-10 h-10 rounded-xl shadow-md"
+                    onClick={() => setCount(count + 1)}
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Close Cart */}
+          <div
+            onClick={() => setCart(!cart)}
+            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+              cart ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
 
           <div className="text-xl hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
             <CiUser size={25} />
@@ -125,7 +189,7 @@ export default function Nav() {
           >
             <IoIosSearch size={25} />
           </div>
-          {/* Search Contain */}
+          {/* Search Open */}
           <div
             className={`bg-white flex flex-col justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[70%] md:w-[40%] h-[100vh] transition-all duration-150 ${
               search ? "-translate-x-full" : "translate-x-0"
@@ -158,7 +222,78 @@ export default function Nav() {
               </ul>
             </div>
           </div>
-          <div onClick={() => setMenu(!menu)}>
+
+          {/* Close Search */}
+          <div
+            onClick={() => setSearch(!search)}
+            className={`fixed top-0 right-0 z-[99] w-[30%] md:w-[60%] h-[100vh] cursor-pointer ${
+              search ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
+
+          <div
+            onClick={() => setCart(!cart)}
+            className="text-2xl pr-5 font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
+          >
+            <IoCartOutline size={25} />
+          </div>
+
+          {/* Cart Open */}
+          <div
+            className={`bg-white flex flex-col px-20 justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[80%] md:w-[40%] h-[100vh] transition-all duration-150 ${
+              cart ? "-translate-x-full" : "translate-x-0"
+            }`}
+          >
+            <h1 className="text-3xl font-semibold pb-5">Your Cart</h1>
+
+            {/* Item 1 */}
+            <div className="w-full h-auto p-3 sm:p-4 flex space-x-3 sm:space-x-4 shadow-lg rounded-xl">
+              <div className="w-[30%] sm:w-[25%] md:w-[20%] h-[100px] sm:h-[120px] overflow-hidden rounded-xl shadow-md">
+                <img
+                  src="/Model/modelinblack.jpg"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="w-[70%] sm:w-[75%] md:w-[80%] flex flex-col items-start justify-between p-2 sm:p-4">
+                <div>
+                  <h1 className="font-semibold text-lg sm:text-xl">
+                    Black Dress
+                  </h1>
+                  <p className="text-sm sm:text-md">Quantity: {count}</p>
+                </div>
+
+                <div className="flex space-x-3 sm:space-x-5 text-lg sm:text-xl pt-2">
+                  <button
+                    className="w-8 sm:w-10 h-8 sm:h-10 rounded-xl shadow-md"
+                    onClick={() => count > 0 && setCount(count - 1)}
+                  >
+                    -
+                  </button>
+                  <p className="pt-1 sm:pt-2">{count}</p>
+                  <button
+                    className="w-8 sm:w-10 h-8 sm:h-10 rounded-xl shadow-md"
+                    onClick={() => setCount(count + 1)}
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Close Cart */}
+          <div
+            onClick={() => setCart(!cart)}
+            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+              cart ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
+
+          <div
+            className="cursor-pointer hover:text-gray-400"
+            onClick={() => setMenu(!menu)}
+          >
             {menu ? <IoMenu size={30} /> : <IoClose size={30} />}
           </div>
         </div>
@@ -171,7 +306,10 @@ export default function Nav() {
         >
           {/* Logo */}
           <div className="w-full h-[80px] border-b mb-2">
-            <div className="w-full h-full flex justify-start items-center px-4">
+            <div
+              onClick={() => setMenu(!menu)}
+              className="w-full h-full flex justify-start items-center px-4"
+            >
               <HashLink smooth to="/#slide" className="flex items-center gap-2">
                 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
                   <img
@@ -189,17 +327,26 @@ export default function Nav() {
           {/* Menu */}
           <div className="flex justify-start px-4 pb-2">
             <ul className="flex flex-col">
-              <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
+              <li
+                onClick={() => setMenu(!menu)}
+                className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500"
+              >
                 <HashLink smooth to="/#brand">
                   Brand
                 </HashLink>
               </li>
-              <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
+              <li
+                onClick={() => setMenu(!menu)}
+                className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500"
+              >
                 <HashLink smooth to="/#about">
                   About
                 </HashLink>
               </li>
-              <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
+              <li
+                onClick={() => setMenu(!menu)}
+                className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500"
+              >
                 <HashLink smooth to="/#contact">
                   Contact
                 </HashLink>
@@ -209,10 +356,6 @@ export default function Nav() {
           {/* Random */}
           <div className="flex justify-start gap-5 px-4">
             <div className="text-2xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
-              <IoCartOutline size={25} />
-            </div>
-
-            <div className="text-2xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
               <CiUser size={25} />
             </div>
           </div>
@@ -221,7 +364,7 @@ export default function Nav() {
         {/* Close Slide */}
         <div
           onClick={() => setMenu(!menu)}
-          className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] ${
+          className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
             menu ? "translate-x-full" : "translate-x-0"
           }`}
         ></div>

@@ -18,20 +18,29 @@ export default function Home() {
     }
   }, [hash]);
   return (
-    <div id="slide" className="scroll-mt-24">
-      <div className="min-h-screen">
+    <div id="slide" className="scroll-mt-28">
+      <div className="max-w-[1920px] mx-auto min-h-[1000px]">
         <Hero />
       </div>
 
-      <div id="brand" className="min-h-[400px] scroll-mt-24">
+      <div
+        id="brand"
+        className="max-w-[1920px] mx-auto min-h-[400px] scroll-mt-24"
+      >
         <Brand />
       </div>
 
-      <div id="about" className="min-h-[400px] scroll-mt-24">
+      <div
+        id="about"
+        className="max-w-[1920px] mx-auto min-h-[400px] scroll-mt-24"
+      >
         <About />
       </div>
 
-      <div id="contact" className="py-20 min-h-[400px] scroll-mt-24">
+      <div
+        id="contact"
+        className="max-w-[1920px] mx-auto py-20 min-h-[400px] scroll-mt-24"
+      >
         <Contact />
       </div>
     </div>

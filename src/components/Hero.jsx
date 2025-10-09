@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 export default function Hero() {
   return (
     <div className="max-w-screen pb-40">
@@ -16,9 +18,11 @@ export default function Hero() {
             Discover the latest trends in fashion and beauty — all in one place.
             Shop exclusive collections and express your unique look.
           </p>
-          <button className="px-4 py-2 bg-gray-300 rounded-full mt-6 hover:bg-gray-400 duration-150 text-lg transition">
-            Shop Now
-          </button>
+          <HashLink smooth to={"/#brand"}>
+            <button className="px-4 py-2 bg-gray-300 rounded-full mt-6 hover:bg-gray-400 duration-150 text-lg transition">
+              Shop Now
+            </button>
+          </HashLink>
         </div>
       </div>
     </div>
