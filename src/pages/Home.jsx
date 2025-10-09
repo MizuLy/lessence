@@ -18,20 +18,20 @@ export default function Home() {
     }
   }, [hash]);
   return (
-    <div id="slide">
+    <div id="slide" className="scroll-mt-24">
       <div className="min-h-screen">
         <Hero />
       </div>
 
-      <div id="brand" className="min-h-[400px]">
+      <div id="brand" className="min-h-[400px] scroll-mt-24">
         <Brand />
       </div>
 
-      <div id="about">
+      <div id="about" className="min-h-[400px] scroll-mt-24">
         <About />
       </div>
 
-      <div id="contact" className="pt-20 h-[70vh]">
+      <div id="contact" className="py-20 min-h-[400px] scroll-mt-24">
         <Contact />
       </div>
     </div>

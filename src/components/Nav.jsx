@@ -31,15 +31,21 @@ export default function Nav() {
         <div className="w-[40%] flex justify-center">
           <ul className="flex gap-10">
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <HashLink smooth to="/#brand">Brand</HashLink>
+              <HashLink smooth to="/#brand">
+                Brand
+              </HashLink>
             </li>
 
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <HashLink smooth to="/#about">About</HashLink>
+              <HashLink smooth to="/#about">
+                About
+              </HashLink>
             </li>
 
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <HashLink smooth to="/#contact">Contact</HashLink>
+              <HashLink smooth to="/#contact">
+                Contact
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -125,13 +131,15 @@ export default function Nav() {
               search ? "-translate-x-full" : "translate-x-0"
             }`}
           >
-            <div className="text-3xl">Looking for something?</div>
+            <div className="text-3xl text-center text-wrap">
+              Looking for something?
+            </div>
             {/* Search */}
             <div className="w-full flex justify-center p-10">
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-[500px] px-4 py-2 outline-none shadow-xl border-b-2 border-black"
+                className="w-[200px] sm:w-[300px] lg:w-[500px] px-4 py-2 outline-none shadow-xl border-b-2 border-black"
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -162,7 +170,7 @@ export default function Nav() {
           }`}
         >
           {/* Logo */}
-          <div className="w-full h-[80px]">
+          <div className="w-full h-[80px] border-b mb-2">
             <div className="w-full h-full flex justify-start items-center px-4">
               <HashLink smooth to="/#slide" className="flex items-center gap-2">
                 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
@@ -177,25 +185,24 @@ export default function Nav() {
               </HashLink>
             </div>
           </div>
-          {/* Search */}
-          <div className="flex justify-start">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="w-full mx-4 mb-4 px-4 py-2 rounded-xl outline-none border"
-            />
-          </div>
+
           {/* Menu */}
           <div className="flex justify-start px-4 pb-2">
             <ul className="flex flex-col">
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <HashLink smooth to="/#brand">Brand</HashLink>
+                <HashLink smooth to="/#brand">
+                  Brand
+                </HashLink>
               </li>
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <HashLink smooth to="/#about">About</HashLink>
+                <HashLink smooth to="/#about">
+                  About
+                </HashLink>
               </li>
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <HashLink smooth to="/#contact">Contact</HashLink>
+                <HashLink smooth to="/#contact">
+                  Contact
+                </HashLink>
               </li>
             </ul>
           </div>
