@@ -10,6 +10,7 @@ import Gucci from "../pages/Gucci";
 import LV from "../pages/LV";
 import YSL from "../pages/YSL";
 import ScrollToTop from "../components/ScrollToTop";
+import BrandDetails from "../pages/BrandDetails";
 
 export default function Mainrouter() {
   return (
@@ -20,6 +21,8 @@ export default function Mainrouter() {
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/brand/:category" element={<BrandDetails />} />
 
         <Route path="/brand/chanel" element={<Chanel />} />
         <Route path="/brand/dior" element={<Dior />} />

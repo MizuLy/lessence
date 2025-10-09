@@ -9,8 +9,6 @@ export default function Nav() {
   const [menu, setMenu] = useState(true);
   const [search, setSearch] = useState(true);
   const [cart, setCart] = useState(true);
-
-  const [activePanel, setActivePanel] = useState(null);
   const [count, setCount] = useState(1);
   return (
     <div>
