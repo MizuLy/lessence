@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { CiUser } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
@@ -13,7 +14,7 @@ export default function Nav() {
       <nav className="bg-white max-w-full h-[80px] hidden lg:flex justify-center items-center shadow-xl">
         {/* Logo */}
         <div className="w-[30%] flex justify-center">
-          <Link to={"/#slide"} className="flex items-center gap-2">
+          <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
                 src="/Logo/AppAnh.png"
@@ -23,22 +24,22 @@ export default function Nav() {
             <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-8">
               AppAnh
             </h1>
-          </Link>
+          </HashLink>
         </div>
 
         {/* Menu */}
         <div className="w-[40%] flex justify-center">
           <ul className="flex gap-10">
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <Link to={"/#brand"}>Brand</Link>
+              <HashLink smooth to="/#brand">Brand</HashLink>
             </li>
 
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <Link to={"/#about"}>About</Link>
+              <HashLink smooth to="/#about">About</HashLink>
             </li>
 
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <Link to={"/#contact"}>Contact</Link>
+              <HashLink smooth to="/#contact">Contact</HashLink>
             </li>
           </ul>
         </div>
@@ -98,7 +99,7 @@ export default function Nav() {
       <nav className="bg-white w-full h-[80px] shadow-xl lg:hidden flex justify-center items-center">
         {/* Logo */}
         <div className="w-[50%] h-full flex justify-start items-center px-4">
-          <Link to={"/#slide"} className="flex items-center gap-2">
+          <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
               <img
                 src="/Logo/AppAnh.png"
@@ -108,7 +109,7 @@ export default function Nav() {
             <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-5 lg:pt-8">
               AppAnh
             </h1>
-          </Link>
+          </HashLink>
         </div>
 
         <div className="w-[50%] h-full flex justify-end items-center px-4">
@@ -163,7 +164,7 @@ export default function Nav() {
           {/* Logo */}
           <div className="w-full h-[80px]">
             <div className="w-full h-full flex justify-start items-center px-4">
-              <Link to={"/#slide"} className="flex items-center gap-2">
+              <HashLink smooth to="/#slide" className="flex items-center gap-2">
                 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] overflow-hidden">
                   <img
                     src="/Logo/AppAnh.png"
@@ -173,7 +174,7 @@ export default function Nav() {
                 <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-5 lg:pt-8">
                   AppAnh
                 </h1>
-              </Link>
+              </HashLink>
             </div>
           </div>
           {/* Search */}
@@ -188,13 +189,13 @@ export default function Nav() {
           <div className="flex justify-start px-4 pb-2">
             <ul className="flex flex-col">
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <Link to={"/#brand"}>Brand</Link>
+                <HashLink smooth to="/#brand">Brand</HashLink>
               </li>
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <Link to={"/#about"}>About</Link>
+                <HashLink smooth to="/#about">About</HashLink>
               </li>
               <li className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500">
-                <Link to={"/#contact"}>Contact</Link>
+                <HashLink smooth to="/#contact">Contact</HashLink>
               </li>
             </ul>
           </div>
