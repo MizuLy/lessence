@@ -9,22 +9,26 @@ import Dior from "../pages/Dior";
 import Gucci from "../pages/Gucci";
 import LV from "../pages/LV";
 import YSL from "../pages/YSL";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Mainrouter() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/beauty" element={<Beauty />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/beauty" element={<Beauty />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
 
-      <Route path="/brand/chanel" element={<Chanel />} />
-      <Route path="/brand/dior" element={<Dior />} />
-      <Route path="/brand/gucci" element={<Gucci />} />
-      <Route path="/brand/lv" element={<LV />} />
-      <Route path="/brand/ysl" element={<YSL />} />
+        <Route path="/brand/chanel" element={<Chanel />} />
+        <Route path="/brand/dior" element={<Dior />} />
+        <Route path="/brand/gucci" element={<Gucci />} />
+        <Route path="/brand/lv" element={<LV />} />
+        <Route path="/brand/ysl" element={<YSL />} />
 
-      <Route path="*" element={<NotFound404 />} />
-    </Routes>
+        <Route path="*" element={<NotFound404 />} />
+      </Routes>
+    </>
   );
 }
