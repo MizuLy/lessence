@@ -3,70 +3,71 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
-      name: "White Skirt",
-      price: "69",
-      discount: "100",
+      name: "Sequined Mini Dress with Fringe Details",
+      price: "3,200",
+      discount: "2,700",
       image:
-        "https://imgs.search.brave.com/OUUIGEoVzrmJZUE7liJWUn9o2z200bI68InKDZff2dU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi9za3pha19x/T3VRZDNGMTZqOW1y/b092LXBCams9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9nZXR0/eWltYWdlcy05Njc2/NDM5NzYtMjAwMC1h/NDI2YzdhODZjMmU0/OGE2YWUzYTVmYjlm/YTViMDE0ZC5qcGc",
-      desc: "A classic white Chanel skirt with timeless elegance.",
+        "https://media.gettyimages.com/id/2236966236/photo/milan-italy-alex-consani-attends-the-gucci-spring-summer-2026-red-carpet-during-the-milan.jpg?s=612x612&w=0&k=20&c=aUiILElJqO7sb2YtUTWUTVz07jhsj1gLhpyITBUZj5c=",
+      desc: "Glamorous sequined mini with playful fringe detailing and modern silhouette.",
     },
     {
-      name: "Runway Look 2025",
-      price: "69",
-      discount: "100",
+      name: "Oversized Leather Blazer with Peaked Lapels",
+      price: "4,100",
+      discount: "3,500",
       image:
-        "https://media.gettyimages.com/id/2196371278/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2025-show.jpg?s=612x612&w=0&k=20&c=sESjKv44-L8Y0wLSd1F0Pa-0LzmpvPNMEUNZeJZDC7s=",
-      desc: "Haute couture runway piece from Chanel’s 2025 collection.",
+        "https://media.gettyimages.com/id/2236511309/photo/demi-moore-at-the-gucci-fashion-show-as-part-of-spring-summer-2026-milan-fashion-week-held-at.jpg?s=612x612&w=0&k=20&c=4HfaiQZCAUgNO64BhUlAGeeRssWgxWJFvbrbDXri1qI=",
+      desc: "Bold oversized blazer in supple leather with sharp peaked lapels.",
     },
     {
-      name: "Kylie Jenner at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Floor-Length Satin Gown with Bow Accent",
+      price: "6,500",
+      discount: "5,500",
       image:
-        "https://media.gettyimages.com/id/2196347212/photo/paris-france-kylie-jenner-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=hZ9dAXyDh9Cz26JA3Ef3vo_rEg50Xjoidi0n8fIfIg4=",
-      desc: "Celebrity-inspired couture look from Chanel’s Paris show.",
+        "https://media.gettyimages.com/id/2236960430/photo/milan-italy-gwyneth-paltrow-attends-the-gucci-spring-summer-2026-red-carpet-during-the-milan.jpg?s=612x612&w=0&k=20&c=qes7grmTNv7AZQRU8lQmtFNgCJs9RumfqGlHG8_YpoU=",
+      desc: "Luxurious floor-length gown in lustrous satin with dramatic bow detail.",
     },
     {
-      name: "Haute Couture 2024",
-      price: "69",
-      discount: "100",
+      name: "Beaded Cocktail Dress with Sheer Overlay",
+      price: "4,800",
+      discount: "4,100",
       image:
-        "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
-      desc: "Delicate craftsmanship from Chanel’s 2024 couture line.",
+        "https://media.gettyimages.com/id/2173358336/photo/milan-italy-jessica-chastain-attends-the-gucci-womens-spring-summer-2025-fashion-show-during.jpg?s=612x612&w=0&k=20&c=hQekuCNpC65F4UcWTfsOL0e71SfqLG9d984ml3O6lAo=",
+      desc: "Intricate beaded dress with delicate sheer overlay and vintage glamour.",
     },
     {
-      name: "Chanel Summer 2024",
-      price: "69",
-      discount: "100",
+      name: "Pinstripe Tailored Suit Set",
+      price: "3,750",
+      discount: "3,200",
       image:
-        "https://media.gettyimages.com/id/1954663614/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=z7WjNgtMq_axTrDgFkJ1Bh5zyaCtcxn38GS8hzH-lE0=",
-      desc: "Light, sophisticated, and designed for summer elegance.",
+        "https://media.gettyimages.com/id/2201927872/photo/milan-italy-a-model-walks-the-runway-at-the-gucci-womens-fall-winter-2025-2026-fashion-show.jpg?s=612x612&w=0&k=20&c=pue9RfjdBvc_umlcvXgh8_YzycHUXOPeOKKjdXlNDbE=",
+      desc: "Sharp pinstripe suit with tailored blazer and matching wide-leg trousers.",
     },
     {
-      name: "Marion Cotillard at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Embroidered Wool Coat with Fur Sleeves",
+      price: "7,200",
+      discount: "6,100",
       image:
-        "https://media.gettyimages.com/id/2224068261/photo/paris-france-marion-cotillard-attends-the-chanel-haute-couture-fall-winter-2025-2026-show-as.jpg?s=612x612&w=0&k=20&c=4zreWeb5jxAKXgE17MaEPJNAEuvyvv29gdyeOhECgQw=",
-      desc: "A red-carpet look showcasing Chanel’s modern refinement.",
+        "https://media.gettyimages.com/id/2236951066/photo/milan-italy-akolde-meen-attends-the-gucci-spring-summer-2026-event-during-the-milan-fashion.jpg?s=612x612&w=0&k=20&c=1EYPvc0-COY2znFC6lIWZMIpryycn10T8euAUmSKeR0=",
+      desc: "Statement wool coat with intricate embroidery and luxe fur sleeve detailing.",
     },
     {
-      name: "Jennie Kim at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Tiered Organza Midi Dress with Ruffles",
+      price: "4,400",
+      discount: "3,750",
       image:
-        "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
-      desc: "A chic blend of youth and luxury from the Chanel show.",
+        "https://media.gettyimages.com/id/1683285629/photo/model-on-the-runway-at-the-gucci-spring-2024-ready-to-wear-fashion-show-on-september-22-2023.jpg?s=612x612&w=0&k=20&c=S6h7lY044CJcyphh2t7MYr_xINd7AKxD5uowgu5NrXU=",
+      desc: "Romantic tiered dress in soft organza with cascading ruffle layers.",
     },
     {
-      name: "Dua Lipa at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Belted Suede Trench Coat with Wide Collar",
+      price: "5,900",
+      discount: "5,000",
       image:
-        "https://media.gettyimages.com/id/2196354754/photo/paris-france-dua-lipa-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=saBKYbsdEAa7e2kcKTOJ4OInx3DLKW6Yi1TEl2T7khY=",
-      desc: "Bold yet graceful — a signature Chanel runway moment.",
+        "https://media.gettyimages.com/id/2201325913/photo/model-on-the-runway-at-the-gucci-fall-rtw-2025-fashion-show-as-part-of-milan-fashion-week.jpg?s=612x612&w=0&k=20&c=mT95TefA6TPVWR7UmSB8CdOyuRjBnFQDltHZlX4XUWQ=",
+      desc: "Classic trench reimagined in soft suede with wide collar and cinched waist.",
     },
   ];
+
   return (
     <div className="w-full min-h-screen pt-10 flex flex-col items-center bg-gray-100">
       {/* Header */}

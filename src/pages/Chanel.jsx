@@ -3,68 +3,68 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
-      name: "White Skirt",
-      price: "69",
-      discount: "100",
+      name: "Ivory Tweed A-Line Skirt",
+      price: "2,850",
+      discount: "2,400",
       image:
         "https://imgs.search.brave.com/OUUIGEoVzrmJZUE7liJWUn9o2z200bI68InKDZff2dU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi9za3pha19x/T3VRZDNGMTZqOW1y/b092LXBCams9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9nZXR0/eWltYWdlcy05Njc2/NDM5NzYtMjAwMC1h/NDI2YzdhODZjMmU0/OGE2YWUzYTVmYjlm/YTViMDE0ZC5qcGc",
-      desc: "A classic white Chanel skirt with timeless elegance.",
+      desc: "Classic knee-length tweed skirt with metallic threads and signature button details.",
     },
     {
-      name: "Runway Look 2025",
-      price: "69",
-      discount: "100",
+      name: "Embellished Tweed Midi Dress with Pearl Details",
+      price: "8,500",
+      discount: "7,200",
       image:
         "https://media.gettyimages.com/id/2196371278/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2025-show.jpg?s=612x612&w=0&k=20&c=sESjKv44-L8Y0wLSd1F0Pa-0LzmpvPNMEUNZeJZDC7s=",
-      desc: "Haute couture runway piece from Chanel’s 2025 collection.",
+      desc: "Spring 2025 runway piece with hand-sewn pearls and structured silhouette.",
     },
     {
-      name: "Kylie Jenner at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Black Sequined Halter Gown with Feather Trim",
+      price: "12,900",
+      discount: "10,800",
       image:
         "https://media.gettyimages.com/id/2196347212/photo/paris-france-kylie-jenner-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=hZ9dAXyDh9Cz26JA3Ef3vo_rEg50Xjoidi0n8fIfIg4=",
-      desc: "Celebrity-inspired couture look from Chanel’s Paris show.",
+      desc: "Glamorous sequined gown with halter neckline and feather hem detailing.",
     },
     {
-      name: "Haute Couture 2024",
-      price: "69",
-      discount: "100",
+      name: "Pale Pink Chiffon Cape Dress with Gold Accents",
+      price: "9,750",
+      discount: "8,100",
       image:
         "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
-      desc: "Delicate craftsmanship from Chanel’s 2024 couture line.",
+      desc: "Ethereal chiffon dress with attached cape and gold embroidered accents.",
     },
     {
-      name: "Chanel Summer 2024",
-      price: "69",
-      discount: "100",
+      name: "White Linen Suit with Contrast Trim Blazer",
+      price: "6,200",
+      discount: "5,300",
       image:
         "https://media.gettyimages.com/id/1954663614/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=z7WjNgtMq_axTrDgFkJ1Bh5zyaCtcxn38GS8hzH-lE0=",
-      desc: "Light, sophisticated, and designed for summer elegance.",
+      desc: "Crisp white linen suit with black contrast trim and tailored fit.",
     },
     {
-      name: "Marion Cotillard at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Navy Velvet Column Gown with Crystal Brooch",
+      price: "11,400",
+      discount: "9,600",
       image:
         "https://media.gettyimages.com/id/2224068261/photo/paris-france-marion-cotillard-attends-the-chanel-haute-couture-fall-winter-2025-2026-show-as.jpg?s=612x612&w=0&k=20&c=4zreWeb5jxAKXgE17MaEPJNAEuvyvv29gdyeOhECgQw=",
-      desc: "A red-carpet look showcasing Chanel’s modern refinement.",
+      desc: "Sleek velvet column gown with statement crystal-encrusted brooch.",
     },
     {
-      name: "Jennie Kim at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Pastel Tweed Mini Dress with Chain Belt",
+      price: "4,950",
+      discount: "4,200",
       image:
         "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
-      desc: "A chic blend of youth and luxury from the Chanel show.",
+      desc: "Playful pastel tweed mini with signature CC chain belt.",
     },
     {
-      name: "Dua Lipa at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Emerald Satin Slip Dress with Jeweled Straps",
+      price: "7,800",
+      discount: "6,500",
       image:
         "https://media.gettyimages.com/id/2196354754/photo/paris-france-dua-lipa-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=saBKYbsdEAa7e2kcKTOJ4OInx3DLKW6Yi1TEl2T7khY=",
-      desc: "Bold yet graceful — a signature Chanel runway moment.",
+      desc: "Bias-cut emerald satin slip with crystal-embellished straps.",
     },
   ];
   return (

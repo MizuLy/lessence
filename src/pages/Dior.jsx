@@ -3,68 +3,68 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
-      name: "White Skirt",
-      price: "69",
-      discount: "100",
+      name: "Pleated Tulle Midi Skirt with Pearl Trim",
+      price: 4200,
+      discount: 3550,
       image:
-        "https://imgs.search.brave.com/OUUIGEoVzrmJZUE7liJWUn9o2z200bI68InKDZff2dU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi9za3pha19x/T3VRZDNGMTZqOW1y/b092LXBCams9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9nZXR0/eWltYWdlcy05Njc2/NDM5NzYtMjAwMC1h/NDI2YzdhODZjMmU0/OGE2YWUzYTVmYjlm/YTViMDE0ZC5qcGc",
-      desc: "A classic white Chanel skirt with timeless elegance.",
+        "https://media.gettyimages.com/id/1952520010/photo/paris-france-rihanna-attends-the-christian-dior-haute-couture-spring-summer-2024-show-as-part.jpg?s=612x612&w=0&k=20&c=pkqEStoRHgZiqqU-sIk5sgHKqlED5zfuGWuaJgCBn6Q=",
+      desc: "Romantic tulle midi skirt with delicate pearl trim and soft pleating.",
     },
     {
-      name: "Runway Look 2025",
-      price: "69",
-      discount: "100",
+      name: "Embroidered Silk Blazer with Structured Shoulders",
+      price: 6800,
+      discount: 5780,
       image:
-        "https://media.gettyimages.com/id/2196371278/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2025-show.jpg?s=612x612&w=0&k=20&c=sESjKv44-L8Y0wLSd1F0Pa-0LzmpvPNMEUNZeJZDC7s=",
-      desc: "Haute couture runway piece from Chanel’s 2025 collection.",
+        "https://media.gettyimages.com/id/1952614854/photo/paris-france-anya-taylor-joy-attends-the-christian-dior-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=YVZlUVUCe5BNfstD3wvQgU2I_RiFJIfRgBDA1vyVCwE=",
+      desc: "Luxurious silk blazer featuring intricate embroidery and strong shoulder lines.",
     },
     {
-      name: "Kylie Jenner at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Floral Jacquard A-Line Dress with V-Neck",
+      price: 5400,
+      discount: 4590,
       image:
-        "https://media.gettyimages.com/id/2196347212/photo/paris-france-kylie-jenner-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=hZ9dAXyDh9Cz26JA3Ef3vo_rEg50Xjoidi0n8fIfIg4=",
-      desc: "Celebrity-inspired couture look from Chanel’s Paris show.",
+        "https://media.gettyimages.com/id/1953444223/photo/paris-france-a-model-walks-the-runway-during-the-christian-dior-haute-couture-spring-summer.jpg?s=612x612&w=0&k=20&c=awgoCzkUflbeGrVlz5xskJM3eXPrIU8r1tfzYcR-B48=",
+      desc: "Elegant floral jacquard dress with flattering A-line silhouette and V-neckline.",
     },
     {
-      name: "Haute Couture 2024",
-      price: "69",
-      discount: "100",
+      name: "Black Satin Column Gown with Crystal Straps",
+      price: 8900,
+      discount: 7565,
       image:
-        "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
-      desc: "Delicate craftsmanship from Chanel’s 2024 couture line.",
+        "https://media.gettyimages.com/id/1952401500/photo/paris-france-carla-bruni-attends-the-dior-haute-couture-show-during-paris-fashion-week-spring.jpg?s=612x612&w=0&k=20&c=PuZVVs0vSp4GnESW2dwZ_7f0lsdjN5MLn6aBbSl5j4E=",
+      desc: "Sleek black satin gown with crystal-embellished shoulder straps.",
     },
     {
-      name: "Chanel Summer 2024",
-      price: "69",
-      discount: "100",
+      name: "Linen Shirt Dress with Contrasting Belt",
+      price: 3700,
+      discount: 3145,
       image:
-        "https://media.gettyimages.com/id/1954663614/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=z7WjNgtMq_axTrDgFkJ1Bh5zyaCtcxn38GS8hzH-lE0=",
-      desc: "Light, sophisticated, and designed for summer elegance.",
+        "https://media.gettyimages.com/id/2158486275/photo/jennifer-lopez-at-christian-dior-fall-2024-couture-show-at-christian-dior-haute-couture-fall.jpg?s=612x612&w=0&k=20&c=j0hciMqWOa6hHlGRS8bLkqeMlBRrgg58v1m4VGi5H1M=",
+      desc: "Crisp linen shirt dress with contrasting waist belt and relaxed fit.",
     },
     {
-      name: "Marion Cotillard at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Beaded Chiffon Gown with Cape Overlay",
+      price: 12500,
+      discount: 10625,
       image:
-        "https://media.gettyimages.com/id/2224068261/photo/paris-france-marion-cotillard-attends-the-chanel-haute-couture-fall-winter-2025-2026-show-as.jpg?s=612x612&w=0&k=20&c=4zreWeb5jxAKXgE17MaEPJNAEuvyvv29gdyeOhECgQw=",
-      desc: "A red-carpet look showcasing Chanel’s modern refinement.",
+        "https://media.gettyimages.com/id/1952384386/photo/paris-france-heart-evangelista-attends-the-christian-dior-haute-couture-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=949C4FaOhMCfV9RVgnpRTed8Hsmr0eWRwJTBXY932Po=",
+      desc: "Ethereal beaded chiffon gown with dramatic cape overlay detail.",
     },
     {
-      name: "Jennie Kim at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Tweed Two-Piece Set with Gold Buttons",
+      price: 5900,
+      discount: 5015,
       image:
         "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
-      desc: "A chic blend of youth and luxury from the Chanel show.",
+      desc: "Classic tweed set with cropped jacket and matching skirt with gold accents.",
     },
     {
-      name: "Dua Lipa at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Velvet Halter Gown with Open Back",
+      price: 7800,
+      discount: 6630,
       image:
-        "https://media.gettyimages.com/id/2196354754/photo/paris-france-dua-lipa-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=saBKYbsdEAa7e2kcKTOJ4OInx3DLKW6Yi1TEl2T7khY=",
-      desc: "Bold yet graceful — a signature Chanel runway moment.",
+        "https://media.gettyimages.com/id/2159019445/photo/paris-france-deva-cassel-attends-the-christian-dior-haute-couture-fall-winter-2024-2025-show.jpg?s=612x612&w=0&k=20&c=rSEuWghJSPKy3bmgtbCfC7zOecEtzWf-T8vVkz96xzU=",
+      desc: "Dramatic velvet halter gown with elegant open back design.",
     },
   ];
   return (

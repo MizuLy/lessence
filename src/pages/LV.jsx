@@ -3,70 +3,71 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
-      name: "White Skirt",
-      price: "69",
-      discount: "100",
+      name: "Monogram Canvas Mini Skirt with Chain Detail",
+      price: "3,200",
+      discount: "2,700",
       image:
-        "https://imgs.search.brave.com/OUUIGEoVzrmJZUE7liJWUn9o2z200bI68InKDZff2dU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi9za3pha19x/T3VRZDNGMTZqOW1y/b092LXBCams9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9nZXR0/eWltYWdlcy05Njc2/NDM5NzYtMjAwMC1h/NDI2YzdhODZjMmU0/OGE2YWUzYTVmYjlm/YTViMDE0ZC5qcGc",
-      desc: "A classic white Chanel skirt with timeless elegance.",
+        "https://media.gettyimages.com/id/2154349807/photo/barcelona-spain-a-model-walks-the-runway-during-louis-vuitton-womenswear-cruise-2025-at-park.jpg?s=612x612&w=0&k=20&c=lLuwMaHXhi2EbBnrj4IeZFDxC6aPvukU7fZm7Vs5grs=",
+      desc: "Iconic monogram canvas mini with signature chain embellishment.",
     },
     {
-      name: "Runway Look 2025",
-      price: "69",
-      discount: "100",
+      name: "Structured Leather Jacket with Quilted Panels",
+      price: "5,800",
+      discount: "4,900",
       image:
-        "https://media.gettyimages.com/id/2196371278/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2025-show.jpg?s=612x612&w=0&k=20&c=sESjKv44-L8Y0wLSd1F0Pa-0LzmpvPNMEUNZeJZDC7s=",
-      desc: "Haute couture runway piece from Chanel’s 2025 collection.",
+        "https://media.gettyimages.com/id/1713411235/photo/paris-france-a-model-walks-the-runway-during-the-louis-vuitton-womenswear-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=EdVmQ_AilhDM-vO7_jph0CbwOwZVUNdH3ug0hXPg208=",
+      desc: "Bold leather jacket featuring quilted panels and architectural structure.",
     },
     {
-      name: "Kylie Jenner at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Brocade Evening Gown with Dramatic Sleeves",
+      price: "7,400",
+      discount: "6,300",
       image:
-        "https://media.gettyimages.com/id/2196347212/photo/paris-france-kylie-jenner-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=hZ9dAXyDh9Cz26JA3Ef3vo_rEg50Xjoidi0n8fIfIg4=",
-      desc: "Celebrity-inspired couture look from Chanel’s Paris show.",
+        "https://media.gettyimages.com/id/1713405228/photo/paris-france-a-model-walks-the-runway-during-the-louis-vuitton-womenswear-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=mo_9OmpuCAyQHikfXqVRhfEPMWl3IX3qTjH62zJm4dQ=",
+      desc: "Luxurious brocade gown with voluminous statement sleeves.",
     },
     {
-      name: "Haute Couture 2024",
-      price: "69",
-      discount: "100",
+      name: "Tailored Wool Suit with Monogram Lining",
+      price: "4,600",
+      discount: "3,900",
       image:
-        "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
-      desc: "Delicate craftsmanship from Chanel’s 2024 couture line.",
+        "https://media.gettyimages.com/id/2204599864/photo/paris-france-felix-walks-the-runway-during-the-louis-vuitton-womenswear-fall-winter-2025-2026.jpg?s=612x612&w=0&k=20&c=Js5R6bQOWT89BBxDyjoMhNYWwJF2frbkzDMagx2930c=",
+      desc: "Impeccably tailored wool suit with hidden monogram lining detail.",
     },
     {
-      name: "Chanel Summer 2024",
-      price: "69",
-      discount: "100",
+      name: "Printed Silk Shirt Dress with Tie Waist",
+      price: "3,900",
+      discount: "3,300",
       image:
-        "https://media.gettyimages.com/id/1954663614/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=z7WjNgtMq_axTrDgFkJ1Bh5zyaCtcxn38GS8hzH-lE0=",
-      desc: "Light, sophisticated, and designed for summer elegance.",
+        "https://media.gettyimages.com/id/1713414169/photo/paris-france-a-model-walks-the-runway-during-the-louis-vuitton-womenswear-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=f1jWckeYs4CMpXRaFXTWRZQn_YlIguW2O8m58YdvlRQ=",
+      desc: "Flowing silk shirt dress with vibrant print and tie waist detail.",
     },
     {
-      name: "Marion Cotillard at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Beaded Tulle Gown with Illusion Neckline",
+      price: "9,200",
+      discount: "7,800",
       image:
-        "https://media.gettyimages.com/id/2224068261/photo/paris-france-marion-cotillard-attends-the-chanel-haute-couture-fall-winter-2025-2026-show-as.jpg?s=612x612&w=0&k=20&c=4zreWeb5jxAKXgE17MaEPJNAEuvyvv29gdyeOhECgQw=",
-      desc: "A red-carpet look showcasing Chanel’s modern refinement.",
+        "https://media.gettyimages.com/id/2238280180/photo/paris-france-julia-saner-walks-the-runway-during-the-louis-vuitton-womenswear-spring-summer.jpg?s=612x612&w=0&k=20&c=MX5TXu1Jwyr5r8UI0pF1gx50kDBCxDx6dyZY8XoZPRc=",
+      desc: "Ethereal beaded tulle gown with delicate illusion neckline.",
     },
     {
-      name: "Jennie Kim at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Geometric Print Dress with Cut-Out Back",
+      price: "4,100",
+      discount: "3,500",
       image:
-        "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
-      desc: "A chic blend of youth and luxury from the Chanel show.",
+        "https://media.gettyimages.com/id/2204599557/photo/paris-france-a-model-walks-the-runway-during-the-louis-vuitton-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=zqICCaVWwEDTsiKkYW0eKqyOeiP_abNeAWinC5hbPFQ=",
+      desc: "Contemporary dress with bold geometric print and unexpected back cutout.",
     },
     {
-      name: "Dua Lipa at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Double-Breasted Trench Coat with Logo Hardware",
+      price: "6,500",
+      discount: "5,500",
       image:
-        "https://media.gettyimages.com/id/2196354754/photo/paris-france-dua-lipa-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=saBKYbsdEAa7e2kcKTOJ4OInx3DLKW6Yi1TEl2T7khY=",
-      desc: "Bold yet graceful — a signature Chanel runway moment.",
+        "https://media.gettyimages.com/id/2204599530/photo/paris-france-a-model-walks-the-runway-during-the-louis-vuitton-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=w9Rd6wR2Df6fLqUt_CewkwLaBLwe6qDxJMrbfXs75ag=",
+      desc: "Classic trench reimagined with signature logo hardware and modern cut.",
     },
   ];
+
   return (
     <div className="w-full min-h-screen pt-10 flex flex-col items-center bg-gray-100">
       {/* Header */}

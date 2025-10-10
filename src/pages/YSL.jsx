@@ -3,70 +3,71 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
-      name: "White Skirt",
-      price: "69",
-      discount: "100",
+      name: "Black Leather Mini Skirt with Pleats",
+      price: "2,400",
+      discount: "2,050",
       image:
-        "https://imgs.search.brave.com/OUUIGEoVzrmJZUE7liJWUn9o2z200bI68InKDZff2dU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi9za3pha19x/T3VRZDNGMTZqOW1y/b092LXBCams9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9nZXR0/eWltYWdlcy05Njc2/NDM5NzYtMjAwMC1h/NDI2YzdhODZjMmU0/OGE2YWUzYTVmYjlm/YTViMDE0ZC5qcGc",
-      desc: "A classic white Chanel skirt with timeless elegance.",
+        "https://media.gettyimages.com/id/2204619892/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=zED7jpjcKDWVPpcTjl-nBgW1V_yi0gluWbEL0Qk48kY=",
+      desc: "Edgy pleated mini skirt in supple black leather with modern edge.",
     },
     {
-      name: "Runway Look 2025",
-      price: "69",
-      discount: "100",
+      name: "Sheer Lace Bodysuit with Tailored Blazer",
+      price: "5,200",
+      discount: "4,400",
       image:
-        "https://media.gettyimages.com/id/2196371278/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2025-show.jpg?s=612x612&w=0&k=20&c=sESjKv44-L8Y0wLSd1F0Pa-0LzmpvPNMEUNZeJZDC7s=",
-      desc: "Haute couture runway piece from Chanel’s 2025 collection.",
+        "https://media.gettyimages.com/id/2238191764/photo/paris-france-bella-hadid-walks-the-runway-during-the-saint-laurent-womenswear-spring-summer.jpg?s=612x612&w=0&k=20&c=HH6LVCbtKedz3YTn0GtEGgs7PjLG5giWhTV2IAkKAtw=",
+      desc: "Daring sheer lace bodysuit paired with sharp tailored blazer.",
     },
     {
-      name: "Kylie Jenner at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Velvet Tuxedo Dress with Satin Lapels",
+      price: "4,900",
+      discount: "4,150",
       image:
-        "https://media.gettyimages.com/id/2196347212/photo/paris-france-kylie-jenner-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=hZ9dAXyDh9Cz26JA3Ef3vo_rEg50Xjoidi0n8fIfIg4=",
-      desc: "Celebrity-inspired couture look from Chanel’s Paris show.",
+        "https://media.gettyimages.com/id/2204619826/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=Dmck2tjBf9O9J5CLFSsfWzZBSaKu8n_61JkeMFHUD00=",
+      desc: "Sophisticated tuxedo dress in rich velvet with glossy satin lapels.",
     },
     {
-      name: "Haute Couture 2024",
-      price: "69",
-      discount: "100",
+      name: "Metallic Midi Skirt with Asymmetric Hem",
+      price: "3,600",
+      discount: "3,050",
       image:
-        "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
-      desc: "Delicate craftsmanship from Chanel’s 2024 couture line.",
+        "https://media.gettyimages.com/id/2204619855/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=mM9VO6tEM730AEo-TGvdPRAm5zPmBhHTlUz66MRtdcE=",
+      desc: "Eye-catching metallic midi with dramatic asymmetric hemline.",
     },
     {
-      name: "Chanel Summer 2024",
-      price: "69",
-      discount: "100",
+      name: "Silk Slip Dress with Cowl Neckline",
+      price: "3,100",
+      discount: "2,650",
       image:
-        "https://media.gettyimages.com/id/1954663614/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=z7WjNgtMq_axTrDgFkJ1Bh5zyaCtcxn38GS8hzH-lE0=",
-      desc: "Light, sophisticated, and designed for summer elegance.",
+        "https://media.gettyimages.com/id/2204619778/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=q3exRen14vfduefbhNNDjHszUcRNZ_vaP7SQHEhEtBk=",
+      desc: "Elegant silk slip with flowing cowl neckline and minimalist design.",
     },
     {
-      name: "Marion Cotillard at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Sequined Column Gown with Train",
+      price: "8,200",
+      discount: "6,950",
       image:
-        "https://media.gettyimages.com/id/2224068261/photo/paris-france-marion-cotillard-attends-the-chanel-haute-couture-fall-winter-2025-2026-show-as.jpg?s=612x612&w=0&k=20&c=4zreWeb5jxAKXgE17MaEPJNAEuvyvv29gdyeOhECgQw=",
-      desc: "A red-carpet look showcasing Chanel’s modern refinement.",
+        "https://media.gettyimages.com/id/2204620085/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=HhM43urSq652Q8KnkPQAhOp0U1kFJe-ehuhcQNEsUmE=",
+      desc: "Show-stopping sequined gown with dramatic floor-length train.",
     },
     {
-      name: "Jennie Kim at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Striped Knit Co-ord Set with Cutouts",
+      price: "2,850",
+      discount: "2,400",
       image:
-        "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
-      desc: "A chic blend of youth and luxury from the Chanel show.",
+        "https://media.gettyimages.com/id/2204620023/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-fall-winter-2025.jpg?s=612x612&w=0&k=20&c=zgUrFQR4RPUj2MfC9OObxqDQEbIByJdQ8UaaXDIIJus=",
+      desc: "Contemporary striped knit set with strategic cutout detailing.",
     },
     {
-      name: "Dua Lipa at Chanel",
-      price: "69",
-      discount: "100",
+      name: "Patent Leather Trench with Wide Belt",
+      price: "6,400",
+      discount: "5,450",
       image:
-        "https://media.gettyimages.com/id/2196354754/photo/paris-france-dua-lipa-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=saBKYbsdEAa7e2kcKTOJ4OInx3DLKW6Yi1TEl2T7khY=",
-      desc: "Bold yet graceful — a signature Chanel runway moment.",
+        "https://media.gettyimages.com/id/2174268448/photo/paris-france-a-model-walks-the-runway-during-the-saint-laurent-womenswear-spring-summer-2025.jpg?s=612x612&w=0&k=20&c=l1xaqmphBCHET0gS3CJ0zNIyH9yaP6DFESox479emd0=",
+      desc: "Striking patent leather trench with cinched waist and bold silhouette.",
     },
   ];
+
   return (
     <div className="w-full min-h-screen pt-10 flex flex-col items-center bg-gray-100">
       {/* Header */}
