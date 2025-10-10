@@ -3,6 +3,7 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
+      id: 1,
       name: "Sequined Mini Dress with Fringe Details",
       price: "3,200",
       discount: "2,700",
@@ -11,6 +12,7 @@ export default function Chanel() {
       desc: "Glamorous sequined mini with playful fringe detailing and modern silhouette.",
     },
     {
+      id: 2,
       name: "Oversized Leather Blazer with Peaked Lapels",
       price: "4,100",
       discount: "3,500",
@@ -19,6 +21,7 @@ export default function Chanel() {
       desc: "Bold oversized blazer in supple leather with sharp peaked lapels.",
     },
     {
+      id: 3,
       name: "Floor-Length Satin Gown with Bow Accent",
       price: "6,500",
       discount: "5,500",
@@ -27,6 +30,7 @@ export default function Chanel() {
       desc: "Luxurious floor-length gown in lustrous satin with dramatic bow detail.",
     },
     {
+      id: 4,
       name: "Beaded Cocktail Dress with Sheer Overlay",
       price: "4,800",
       discount: "4,100",
@@ -35,6 +39,7 @@ export default function Chanel() {
       desc: "Intricate beaded dress with delicate sheer overlay and vintage glamour.",
     },
     {
+      id: 5,
       name: "Pinstripe Tailored Suit Set",
       price: "3,750",
       discount: "3,200",
@@ -43,6 +48,7 @@ export default function Chanel() {
       desc: "Sharp pinstripe suit with tailored blazer and matching wide-leg trousers.",
     },
     {
+      id: 6,
       name: "Embroidered Wool Coat with Fur Sleeves",
       price: "7,200",
       discount: "6,100",
@@ -51,6 +57,7 @@ export default function Chanel() {
       desc: "Statement wool coat with intricate embroidery and luxe fur sleeve detailing.",
     },
     {
+      id: 7,
       name: "Tiered Organza Midi Dress with Ruffles",
       price: "4,400",
       discount: "3,750",
@@ -59,6 +66,7 @@ export default function Chanel() {
       desc: "Romantic tiered dress in soft organza with cascading ruffle layers.",
     },
     {
+      id: 8,
       name: "Belted Suede Trench Coat with Wide Collar",
       price: "5,900",
       discount: "5,000",

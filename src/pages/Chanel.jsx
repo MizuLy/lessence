@@ -3,6 +3,7 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
+      id: 1,
       name: "Ivory Tweed A-Line Skirt",
       price: "2,850",
       discount: "2,400",
@@ -11,6 +12,7 @@ export default function Chanel() {
       desc: "Classic knee-length tweed skirt with metallic threads and signature button details.",
     },
     {
+      id: 2,
       name: "Embellished Tweed Midi Dress with Pearl Details",
       price: "8,500",
       discount: "7,200",
@@ -19,6 +21,7 @@ export default function Chanel() {
       desc: "Spring 2025 runway piece with hand-sewn pearls and structured silhouette.",
     },
     {
+      id: 3,
       name: "Black Sequined Halter Gown with Feather Trim",
       price: "12,900",
       discount: "10,800",
@@ -27,6 +30,7 @@ export default function Chanel() {
       desc: "Glamorous sequined gown with halter neckline and feather hem detailing.",
     },
     {
+      id: 4,
       name: "Pale Pink Chiffon Cape Dress with Gold Accents",
       price: "9,750",
       discount: "8,100",
@@ -35,6 +39,7 @@ export default function Chanel() {
       desc: "Ethereal chiffon dress with attached cape and gold embroidered accents.",
     },
     {
+      id: 5,
       name: "White Linen Suit with Contrast Trim Blazer",
       price: "6,200",
       discount: "5,300",
@@ -43,6 +48,7 @@ export default function Chanel() {
       desc: "Crisp white linen suit with black contrast trim and tailored fit.",
     },
     {
+      id: 6,
       name: "Navy Velvet Column Gown with Crystal Brooch",
       price: "11,400",
       discount: "9,600",
@@ -51,6 +57,7 @@ export default function Chanel() {
       desc: "Sleek velvet column gown with statement crystal-encrusted brooch.",
     },
     {
+      id: 7,
       name: "Pastel Tweed Mini Dress with Chain Belt",
       price: "4,950",
       discount: "4,200",
@@ -59,6 +66,7 @@ export default function Chanel() {
       desc: "Playful pastel tweed mini with signature CC chain belt.",
     },
     {
+      id: 8,
       name: "Emerald Satin Slip Dress with Jeweled Straps",
       price: "7,800",
       discount: "6,500",

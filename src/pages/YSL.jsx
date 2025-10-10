@@ -3,6 +3,7 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
+      id: 1,
       name: "Black Leather Mini Skirt with Pleats",
       price: "2,400",
       discount: "2,050",
@@ -11,6 +12,7 @@ export default function Chanel() {
       desc: "Edgy pleated mini skirt in supple black leather with modern edge.",
     },
     {
+      id: 2,
       name: "Sheer Lace Bodysuit with Tailored Blazer",
       price: "5,200",
       discount: "4,400",
@@ -19,6 +21,7 @@ export default function Chanel() {
       desc: "Daring sheer lace bodysuit paired with sharp tailored blazer.",
     },
     {
+      id: 3,
       name: "Velvet Tuxedo Dress with Satin Lapels",
       price: "4,900",
       discount: "4,150",
@@ -27,6 +30,7 @@ export default function Chanel() {
       desc: "Sophisticated tuxedo dress in rich velvet with glossy satin lapels.",
     },
     {
+      id: 4,
       name: "Metallic Midi Skirt with Asymmetric Hem",
       price: "3,600",
       discount: "3,050",
@@ -35,6 +39,7 @@ export default function Chanel() {
       desc: "Eye-catching metallic midi with dramatic asymmetric hemline.",
     },
     {
+      id: 5,
       name: "Silk Slip Dress with Cowl Neckline",
       price: "3,100",
       discount: "2,650",
@@ -43,6 +48,7 @@ export default function Chanel() {
       desc: "Elegant silk slip with flowing cowl neckline and minimalist design.",
     },
     {
+      id: 6,
       name: "Sequined Column Gown with Train",
       price: "8,200",
       discount: "6,950",
@@ -51,6 +57,7 @@ export default function Chanel() {
       desc: "Show-stopping sequined gown with dramatic floor-length train.",
     },
     {
+      id: 7,
       name: "Striped Knit Co-ord Set with Cutouts",
       price: "2,850",
       discount: "2,400",
@@ -59,6 +66,7 @@ export default function Chanel() {
       desc: "Contemporary striped knit set with strategic cutout detailing.",
     },
     {
+      id: 8,
       name: "Patent Leather Trench with Wide Belt",
       price: "6,400",
       discount: "5,450",

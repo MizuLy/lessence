@@ -22,8 +22,10 @@ export default function Mainrouter() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/brand/:category" element={<BrandDetails />} />
+        {/* Dynamic product info */}
+        <Route path="/brand/:brand/:id" element={<BrandDetails />} />
 
+        {/* Static brand */}
         <Route path="/brand/chanel" element={<Chanel />} />
         <Route path="/brand/dior" element={<Dior />} />
         <Route path="/brand/gucci" element={<Gucci />} />

@@ -3,6 +3,7 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
+      id: 1,
       name: "Monogram Canvas Mini Skirt with Chain Detail",
       price: "3,200",
       discount: "2,700",
@@ -11,6 +12,7 @@ export default function Chanel() {
       desc: "Iconic monogram canvas mini with signature chain embellishment.",
     },
     {
+      id: 2,
       name: "Structured Leather Jacket with Quilted Panels",
       price: "5,800",
       discount: "4,900",
@@ -19,6 +21,7 @@ export default function Chanel() {
       desc: "Bold leather jacket featuring quilted panels and architectural structure.",
     },
     {
+      id: 3,
       name: "Brocade Evening Gown with Dramatic Sleeves",
       price: "7,400",
       discount: "6,300",
@@ -27,6 +30,7 @@ export default function Chanel() {
       desc: "Luxurious brocade gown with voluminous statement sleeves.",
     },
     {
+      id: 4,
       name: "Tailored Wool Suit with Monogram Lining",
       price: "4,600",
       discount: "3,900",
@@ -35,6 +39,7 @@ export default function Chanel() {
       desc: "Impeccably tailored wool suit with hidden monogram lining detail.",
     },
     {
+      id: 5,
       name: "Printed Silk Shirt Dress with Tie Waist",
       price: "3,900",
       discount: "3,300",
@@ -43,6 +48,7 @@ export default function Chanel() {
       desc: "Flowing silk shirt dress with vibrant print and tie waist detail.",
     },
     {
+      id: 6,
       name: "Beaded Tulle Gown with Illusion Neckline",
       price: "9,200",
       discount: "7,800",
@@ -51,6 +57,7 @@ export default function Chanel() {
       desc: "Ethereal beaded tulle gown with delicate illusion neckline.",
     },
     {
+      id: 7,
       name: "Geometric Print Dress with Cut-Out Back",
       price: "4,100",
       discount: "3,500",
@@ -59,6 +66,7 @@ export default function Chanel() {
       desc: "Contemporary dress with bold geometric print and unexpected back cutout.",
     },
     {
+      id: 8,
       name: "Double-Breasted Trench Coat with Logo Hardware",
       price: "6,500",
       discount: "5,500",

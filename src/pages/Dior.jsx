@@ -3,6 +3,7 @@ import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
 export default function Chanel() {
   const product = [
     {
+      id: 1,
       name: "Pleated Tulle Midi Skirt with Pearl Trim",
       price: 4200,
       discount: 3550,
@@ -11,6 +12,7 @@ export default function Chanel() {
       desc: "Romantic tulle midi skirt with delicate pearl trim and soft pleating.",
     },
     {
+      id: 2,
       name: "Embroidered Silk Blazer with Structured Shoulders",
       price: 6800,
       discount: 5780,
@@ -19,6 +21,7 @@ export default function Chanel() {
       desc: "Luxurious silk blazer featuring intricate embroidery and strong shoulder lines.",
     },
     {
+      id: 3,
       name: "Floral Jacquard A-Line Dress with V-Neck",
       price: 5400,
       discount: 4590,
@@ -27,6 +30,7 @@ export default function Chanel() {
       desc: "Elegant floral jacquard dress with flattering A-line silhouette and V-neckline.",
     },
     {
+      id: 4,
       name: "Black Satin Column Gown with Crystal Straps",
       price: 8900,
       discount: 7565,
@@ -35,6 +39,7 @@ export default function Chanel() {
       desc: "Sleek black satin gown with crystal-embellished shoulder straps.",
     },
     {
+      id: 5,
       name: "Linen Shirt Dress with Contrasting Belt",
       price: 3700,
       discount: 3145,
@@ -43,6 +48,7 @@ export default function Chanel() {
       desc: "Crisp linen shirt dress with contrasting waist belt and relaxed fit.",
     },
     {
+      id: 6,
       name: "Beaded Chiffon Gown with Cape Overlay",
       price: 12500,
       discount: 10625,
@@ -51,6 +57,7 @@ export default function Chanel() {
       desc: "Ethereal beaded chiffon gown with dramatic cape overlay detail.",
     },
     {
+      id: 7,
       name: "Tweed Two-Piece Set with Gold Buttons",
       price: 5900,
       discount: 5015,
@@ -59,6 +66,7 @@ export default function Chanel() {
       desc: "Classic tweed set with cropped jacket and matching skirt with gold accents.",
     },
     {
+      id: 8,
       name: "Velvet Halter Gown with Open Back",
       price: 7800,
       discount: 6630,
