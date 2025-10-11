@@ -11,6 +11,7 @@ import LV from "../pages/LV";
 import YSL from "../pages/YSL";
 import ScrollToTop from "../components/ScrollToTop";
 import BrandDetails from "../pages/BrandDetails";
+import ProductDetails from "../pages/ProductDetails";
 
 export default function Mainrouter() {
   return (
@@ -23,14 +24,15 @@ export default function Mainrouter() {
         <Route path="/contact" element={<Contact />} />
 
         {/* Dynamic product info */}
-        <Route path="/brand/:brand/:id" element={<BrandDetails />} />
+        <Route path="/brand/:category" element={<BrandDetails />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
 
         {/* Static brand */}
-        <Route path="/brand/chanel" element={<Chanel />} />
+        {/* <Route path="/brand/chanel" element={<Chanel />} />
         <Route path="/brand/dior" element={<Dior />} />
         <Route path="/brand/gucci" element={<Gucci />} />
         <Route path="/brand/lv" element={<LV />} />
-        <Route path="/brand/ysl" element={<YSL />} />
+        <Route path="/brand/ysl" element={<YSL />} /> */}
 
         <Route path="*" element={<NotFound404 />} />
       </Routes>

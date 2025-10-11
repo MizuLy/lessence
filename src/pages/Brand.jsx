@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 export default function Brand() {
   const brands = [
     { name: "chanel", logo: "chanel.png" },
@@ -8,13 +7,11 @@ export default function Brand() {
     { name: "lv", logo: "lv.png" },
     { name: "ysl", logo: "ysl.png" },
   ];
-
   return (
     <div className="text-center flex flex-col justify-center items-center pb-20 pt-10 bg-gray-200">
       <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-10">
         Our Partnership
       </h1>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {brands.map((brand) => (
           <Link key={brand.name} to={`/brand/${brand.name}`}>
