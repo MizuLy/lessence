@@ -376,49 +376,40 @@ export default function BrandDetail() {
   const product = brandCategory[category] || [];
   const brandName = category;
   return (
-    <div className="pt-10">
-      <div className="flex justify-center items-center">
-        <Link
-          className="text-3xl lg:text-5xl font-semibold text-center animate-pulse uppercase"
-          to={"/"}
-        >
-          {brandName}
-        </Link>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4">
-        {product.map((p) => (
-          <div key={p.id}>
-            <Link to={`/product/${p.id}`}>
-              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div className="overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    className="w-full h-[300px] object-contain hover:scale-105 duration-300"
-                  />
-                </div>
-
-                <div className="p-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4">
+      {product.map((p) => (
+        <div key={p.id} className="flex">
+          <Link to={`/product/${p.id}`} className="flex-1 group">
+            <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col h-full">
+              <div className="overflow-hidden h-[300px]">
+                <img
+                  src={p.image}
+                  alt={p.name}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 flex-1 flex flex-col justify-between">
+                <div>
                   <h2 className="text-lg font-bold mb-2 line-clamp-2">
                     {p.name}
                   </h2>
                   <p className="text-gray-600 text-sm mb-3 line-clamp-2">
                     {p.desc}
                   </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl font-bold text-red-600">
-                      ${p.discount}
-                    </span>
-                    <span className="text-sm text-gray-400 line-through">
-                      ${p.price}
-                    </span>
-                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl font-bold text-red-600">
+                    ${p.discount}
+                  </span>
+                  <span className="text-sm text-gray-400 line-through">
+                    ${p.price}
+                  </span>
                 </div>
               </div>
-            </Link>
-          </div>
-        ))}
-      </div>
+            </div>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }
