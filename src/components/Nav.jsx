@@ -200,7 +200,7 @@ export default function Nav() {
             <div className="flex items-center space-x-2 mt-2">
               <span>Don't have an account?</span>
               <Link
-                className="text-gray-500 hover:underline hover:text-black"
+                className="hover:underline text-gray-500 hover:text-black"
                 onClick={() => setAccount(!account)}
               >
                 Sign Up
@@ -420,55 +420,6 @@ export default function Nav() {
               <CiUser size={25} />
             </div>
           </div>
-
-          {/* <div
-            className={`open-account bg-white flex flex-col justify-center items-center fixed z-[100] shadow-md w-[8 font-josefinsans0%] md:w-[40%] h-[auto] p-8 transition-all duration-300 ${
-              account
-                ? "hidden"
-                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
-            }`}
-          >
-            <h1 className="text-3xl lg:text-5xl font-semibold pb-4">Login</h1>
-            <input
-              type="text"
-              placeholder="Username"
-              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
-            />
-
-            <input
-              type="email"
-              placeholder="Email"
-              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
-            />
-
-            <input
-              type="password"
-              placeholder="Password"
-              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
-            />
-
-            <button className="px-4 py-2 bg-gray-600 text-white mt-2 rounded-full hover:bg-black duration-150">
-              Login
-            </button>
-            <div className="flex items-center space-x-2 mt-2">
-              <span>Don't have an account?</span>
-              <Link
-                className="text-gray-500 hover:underline hover:text-black"
-                onClick={() => setAccount(!account)}
-              >
-                Sign Up
-              </Link>
-            </div>
-          </div>
-
-          <div
-            onClick={() => setAccount(!account)}
-            className={`close-account fixed top-0 right-0 z-[99] w-full bg-black/50 h-[100vh] cursor-pointer ${
-              account
-                ? "translate-x-full"
-                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
-            }`}
-          ></div> */}
 
           {/* Close Slide */}
           <div
