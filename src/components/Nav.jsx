@@ -169,7 +169,7 @@ export default function Nav() {
 
           {/* Account Open */}
           <div
-            className={`bg-white rounded-full flex flex-col justify-center items-center fixed z-[100] shadow-md w-[8 font-josefinsans0%] md:w-[40%] h-[auto] p-8 transition-all duration-300 ${
+            className={`bg-white rounded-tl-full rounded-br-full flex flex-col justify-center items-center fixed z-[100] shadow-md w-[8 font-josefinsans0%] md:w-[40%] h-[auto] p-8 transition-all duration-300 ${
               account
                 ? "hidden"
                 : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
