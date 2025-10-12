@@ -373,43 +373,63 @@ export default function BrandDetail() {
       },
     ],
   };
+  const brandDisplayNames = {
+    chanel: "Chanel",
+    dior: "Dior",
+    gucci: "Gucci",
+    lv: "Louis Vuitton",
+    ysl: "Yves Saint Laurent",
+  };
+
   const product = brandCategory[category] || [];
   const brandName = category;
+  const displayName = brandDisplayNames[brandName] || brandName;
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4">
-      {product.map((p) => (
-        <div key={p.id} className="flex">
-          <Link to={`/product/${p.id}`} className="flex-1 group">
-            <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col h-full">
-              <div className="overflow-hidden h-[300px]">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-4 flex-1 flex flex-col justify-between">
-                <div>
-                  <h2 className="text-lg font-bold mb-2 line-clamp-2">
-                    {p.name}
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">
-                    {p.desc}
-                  </p>
+    <div className="flex flex-col items-center">
+      <div className="pt-10 flex justify-center items-center">
+        <Link
+          className="text-3xl lg:text-5xl animate-pulse uppercase font-semibold font-josefinsans"
+          to={"/"}
+        >
+          {displayName}
+        </Link>
+      </div>
+
+      <div className="min-w-[100px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4 [grid-auto-rows:400px]">
+        {product.map((p) => (
+          <div key={p.id} className="flex justify-center">
+            <Link to={`/product/${p.id}`} className="group">
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-[250px] h-full">
+                <div className="bg-white overflow-hidden max-h-[300px] mx-auto">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xl font-bold text-red-600">
-                    ${p.discount}
-                  </span>
-                  <span className="text-sm text-gray-400 line-through">
-                    ${p.price}
-                  </span>
+                <div className="p-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h2 className="text-lg font-bold mb-2 line-clamp-2">
+                      {p.name}
+                    </h2>
+                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                      {p.desc}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xl font-bold text-red-600">
+                      ${p.discount}
+                    </span>
+                    <span className="text-sm text-gray-400 line-through">
+                      ${p.price}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        </div>
-      ))}
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -9,6 +9,7 @@ export default function Nav() {
   const [menu, setMenu] = useState(true);
   const [search, setSearch] = useState(true);
   const [cart, setCart] = useState(true);
+  const [account, setAccount] = useState(true);
   const [count, setCount] = useState(1);
   return (
     <div>
@@ -79,12 +80,14 @@ export default function Nav() {
             <div className="flex flex-col justify-center">
               <ul>
                 <li className="font-bold border-b-2 b">POPULAR NOW</li>
-                <li className="pt-2">
+
+                <li onClick={() => setSearch(!search)} className="pt-2">
                   <span className="hover:font-semibold cursor-pointer">
                     MEN
                   </span>
                 </li>
-                <li className="pt-2">
+
+                <li onClick={() => setSearch(!search)} className="pt-2">
                   <span className="hover:font-semibold cursor-pointer">
                     WOMEN
                   </span>
@@ -117,7 +120,7 @@ export default function Nav() {
             <h1 className="text-3xl font-semibold pb-5">Your Cart</h1>
 
             {/* Item 1 */}
-            <div className=" w-full h-[140px] p-4 flex space-x-4 shadow-lg rounded-xl">
+            <div className=" w-full min-h-[140px] p-4 flex space-x-4 shadow-lg rounded-xl">
               <div className="w-[20%] h-full overflow-hidden rounded-xl shadow-md">
                 <img
                   src="/Model/modelinblack.jpg"
@@ -127,7 +130,7 @@ export default function Nav() {
               <div className="w-[80%] h-full flex flex-col items-start p-4">
                 <div>
                   <h1 className="font-semibold text-xl">Black Dress</h1>
-                  <p className="text-md">Quantity: 3</p>
+                  <p className="text-md">Quantity: {count}</p>
                 </div>
 
                 <div className="flex space-x-5 text-xl py-2">
@@ -157,9 +160,63 @@ export default function Nav() {
             }`}
           ></div>
 
-          <div className="text-xl hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
+          <div
+            onClick={() => setAccount(!account)}
+            className="text-xl hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
+          >
             <CiUser size={25} />
           </div>
+
+          {/* Account Open */}
+          <div
+            className={`bg-white rounded-full flex flex-col justify-center items-center fixed z-[100] shadow-md w-[8 font-josefinsans0%] md:w-[40%] h-[auto] p-8 transition-all duration-300 ${
+              account
+                ? "hidden"
+                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
+            }`}
+          >
+            <h1 className="text-3xl lg:text-5xl font-semibold pb-4">Login</h1>
+            <input
+              type="text"
+              placeholder="Username"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <input
+              type="password"
+              placeholder="Password"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <button className="px-4 py-2 bg-gray-600 text-white mt-2 rounded-full hover:bg-black duration-150">
+              Login
+            </button>
+            <div className="flex items-center space-x-2 mt-2">
+              <span>Don't have an account?</span>
+              <Link
+                className="text-gray-500 hover:underline hover:text-black"
+                onClick={() => setAccount(!account)}
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+
+          {/* Close Account */}
+          <div
+            onClick={() => setAccount(!account)}
+            className={`fixed top-0 right-0 z-[99] w-full bg-black/50 h-[100vh] cursor-pointer ${
+              account
+                ? "translate-x-full"
+                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
+            }`}
+          ></div>
         </div>
       </nav>
 
@@ -353,19 +410,74 @@ export default function Nav() {
           </div>
           {/* Random */}
           <div className="flex justify-start gap-5 px-4">
-            <div className="text-2xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center">
+            <div
+              onClick={() => {
+                setMenu(!menu);
+                setAccount(!account);
+              }}
+              className="text-2xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
+            >
               <CiUser size={25} />
             </div>
           </div>
-        </div>
 
-        {/* Close Slide */}
-        <div
-          onClick={() => setMenu(!menu)}
-          className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
-            menu ? "translate-x-full" : "translate-x-0"
-          }`}
-        ></div>
+          {/* <div
+            className={`open-account bg-white flex flex-col justify-center items-center fixed z-[100] shadow-md w-[8 font-josefinsans0%] md:w-[40%] h-[auto] p-8 transition-all duration-300 ${
+              account
+                ? "hidden"
+                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
+            }`}
+          >
+            <h1 className="text-3xl lg:text-5xl font-semibold pb-4">Login</h1>
+            <input
+              type="text"
+              placeholder="Username"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <input
+              type="password"
+              placeholder="Password"
+              className="sm:w-[80%] lg:w-[50%] mb-2 px-4 py-2 border font-josefinsans border-gray-300 rounded-md shadow-md outline-none placeholder-gray-400"
+            />
+
+            <button className="px-4 py-2 bg-gray-600 text-white mt-2 rounded-full hover:bg-black duration-150">
+              Login
+            </button>
+            <div className="flex items-center space-x-2 mt-2">
+              <span>Don't have an account?</span>
+              <Link
+                className="text-gray-500 hover:underline hover:text-black"
+                onClick={() => setAccount(!account)}
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+
+          <div
+            onClick={() => setAccount(!account)}
+            className={`close-account fixed top-0 right-0 z-[99] w-full bg-black/50 h-[100vh] cursor-pointer ${
+              account
+                ? "translate-x-full"
+                : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
+            }`}
+          ></div> */}
+
+          {/* Close Slide */}
+          <div
+            onClick={() => setMenu(!menu)}
+            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+              menu ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
+        </div>
       </nav>
     </div>
   );

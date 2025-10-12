@@ -409,38 +409,59 @@ export default function ProductDetails() {
   ];
   const product = allProducts.find((p) => p.id === parseInt(productId));
   if (!product) return <p className="text-white">Product not found</p>;
+  const brandDisplayNames = {
+    chanel: "Chanel",
+    dior: "Dior",
+    gucci: "Gucci",
+    lv: "Louis Vuitton",
+    ysl: "Yves Saint Laurent",
+  };
+  const brandName = product.brand;
+  const displayName = brandDisplayNames[brandName] || brandName;
+
   return (
     <div className="container mx-auto px-4 py-10">
-      <div className="max-w-[700px] mx-auto flex space-x-6">
-        <div className="overflow-hidden min-w-[300px]">
+      <div className="flex justify-center items-center mb-4">
+        <Link
+          className="text-3xl lg:text-5xl uppercase font-semibold animate-pulse font-josefinsans"
+          to={`/brand/${brandName}`}
+        >
+          {displayName}
+        </Link>
+      </div>
+
+      <div className="max-w-[900px] mx-auto flex flex-col justify-center items-center md:flex-row gap-8">
+        <div className="overflow-hidden min-w-[300px] rounded-lg">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-auto rounded-lg shadow-lg object-cover"
+            className="w-full h-auto shadow-lg hover:scale-110 duration-300 object-cover"
           />
         </div>
 
         <div className="mt-6 flex flex-wrap justify-center items-center">
-          <h1 className="text-3xl font-bold mb-3">{product.name}</h1>
-          <p className="text-gray-600 mb-4">{product.desc}</p>
-          <div className="flex items-center gap-4">
-            <span className="text-3xl font-bold text-red-600">
-              ${product.discount}
-            </span>
-            <span className="text-xl text-gray-400 line-through">
-              ${product.price}
-            </span>
-          </div>
-          <div className="space-x-5 mt-6">
-            <button className=" bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
-              Add to Cart
-            </button>
-            <Link
-              className="bg-gray-500 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
-              to={`/brand/${product.brand}`}
-            >
-              Shop more
-            </Link>
+          <div className="flex flex-col">
+            <h1 className="text-3xl font-bold">{product.name}</h1>
+            <p className="text-gray-600 mt-4">{product.desc}</p>
+            <div className="flex items-center space-x-4 mt-4">
+              <span className="text-3xl font-bold text-red-600">
+                ${product.discount}
+              </span>
+              <span className="text-xl text-gray-400 line-through">
+                ${product.price}
+              </span>
+            </div>
+            <div className="space-y-4 mt-6 flex flex-col">
+              <button className=" bg-black text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors">
+                Add to Cart
+              </button>
+              <Link
+                className="bg-gray-500 text-center text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors"
+                to={`/brand/${product.brand}`}
+              >
+                Shop more
+              </Link>
+            </div>
           </div>
         </div>
       </div>
