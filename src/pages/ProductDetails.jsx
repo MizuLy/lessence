@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 export default function ProductDetails() {
   const { productId } = useParams();
@@ -407,6 +408,8 @@ export default function ProductDetails() {
       desc: "Striking patent leather trench with cinched waist and bold silhouette.",
     },
   ];
+  const size = ["XS", "S", "M", "L", "XL", "XXL"];
+  const [active, setActive] = useState(null);
   const product = allProducts.find((p) => p.id === parseInt(productId));
   if (!product) return <p className="text-white">Product not found</p>;
   const brandDisplayNames = {
@@ -451,6 +454,19 @@ export default function ProductDetails() {
                 ${product.price}
               </span>
             </div>
+            <div className="flex space-x-2 mt-4">
+              {size.map((s) => (
+                <button
+                  onClick={() => setActive(s)}
+                  className={`w-10 h-10 bg-gray-300 hover:bg-gray-600 hover:text-white duration-300 ${
+                    active === s ? "bg-gray-600 text-white" : "bg-gray-300"
+                  }`}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+
             <div className="space-y-4 mt-6 flex flex-col">
               <button className=" bg-black text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors">
                 Add to Cart
