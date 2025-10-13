@@ -5,7 +5,7 @@ import Announcer from "../components/Announcer";
 
 export default function Mainlayout() {
   return (
-    <div className="flex flex-col max-w-full min-h-screen">
+    <div className="flex flex-col m-auto min-h-screen  max-w-[2000px]">
       <div className="sticky w-full top-0 left-0 z-[99]">
         <Nav />
         <Announcer />
