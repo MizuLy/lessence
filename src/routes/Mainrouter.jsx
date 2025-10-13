@@ -12,6 +12,7 @@ import YSL from "../pages/YSL";
 import ScrollToTop from "../components/ScrollToTop";
 import BrandDetails from "../pages/BrandDetails";
 import ProductDetails from "../pages/ProductDetails";
+import Cart from "../pages/Cart";
 
 export default function Mainrouter() {
   return (
@@ -22,6 +23,7 @@ export default function Mainrouter() {
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
 
         {/* Dynamic product info */}
         <Route path="/brand/:category" element={<BrandDetails />} />

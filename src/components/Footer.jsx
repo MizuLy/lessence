@@ -9,17 +9,18 @@ export default function Footer() {
             <span className="font-bold">App</span>Anh
           </Link>
         </h1>
-        <p>Entry Level Web Developer</p>
+        <p>Trust in good quality premium product, Trust in us and our services.</p>
       </div>
 
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
-        <h1 className="text-3xl font-josefinsans mb-3">Company</h1>
+        <h1 className="text-3xl font-josefinsans mb-3">Social</h1>
         <div className="flex flex-col space-y-2">
           <p className="cursor-pointer hover:text-blue-500">Facebook</p>
-          <p className="cursor-pointer hover:text-yellow-400">Amazon</p>
-          <p className="cursor-pointer hover:text-gray-100/50">Apple</p>
-          <p className="cursor-pointer hover:text-red-500">Netflix</p>
-          <p className="cursor-pointer hover:text-green-500">Google</p>
+          <p className="cursor-pointer hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#8134af]">
+            Instragram
+          </p>
+          <p className="cursor-pointer hover:text-blue-100/50">Twitter (X)</p>
+          <p className="cursor-pointer hover:text-gray-500">TikTok</p>
         </div>
       </div>
 

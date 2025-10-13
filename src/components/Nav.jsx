@@ -104,61 +104,14 @@ export default function Nav() {
             }`}
           ></div>
 
-          <div
-            onClick={() => setCart(!cart)}
-            className="text-xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
-          >
-            <IoCartOutline size={25} />
-          </div>
-
-          {/* Cart Open */}
-          <div
-            className={`bg-white flex flex-col px-20 justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[80%] md:w-[40%] h-[100vh] transition-all duration-150 ${
-              cart ? "-translate-x-full" : "translate-x-0"
-            }`}
-          >
-            <h1 className="text-3xl font-semibold pb-5">Your Cart</h1>
-
-            {/* Item 1 */}
-            <div className=" w-full min-h-[140px] p-4 flex space-x-4 shadow-lg rounded-xl">
-              <div className="w-[20%] h-full overflow-hidden rounded-xl shadow-md">
-                <img
-                  src="/Model/modelinblack.jpg"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="w-[80%] h-full flex flex-col items-start p-4">
-                <div>
-                  <h1 className="font-semibold text-xl">Black Dress</h1>
-                  <p className="text-md">Quantity: {count}</p>
-                </div>
-
-                <div className="flex space-x-5 text-xl py-2">
-                  <button
-                    className="w-10 h-10 rounded-xl shadow-md"
-                    onClick={() => count > 0 && setCount(count - 1)}
-                  >
-                    -
-                  </button>
-                  <p className="pt-2">{count}</p>
-                  <button
-                    className="w-10 h-10 rounded-xl shadow-md"
-                    onClick={() => setCount(count + 1)}
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
+          <Link to={'/cart'}>
+            <div
+              onClick={() => setCart(!cart)}
+              className="text-xl font-semibold hover:text-gray-500 duration-150 cursor-pointer flex gap-5 items-center justify-center"
+            >
+              <IoCartOutline size={25} />
             </div>
-          </div>
-
-          {/* Close Cart */}
-          <div
-            onClick={() => setCart(!cart)}
-            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
-              cart ? "translate-x-full" : "translate-x-0"
-            }`}
-          ></div>
+          </Link>
 
           <div
             onClick={() => setAccount(!account)}
@@ -420,15 +373,14 @@ export default function Nav() {
               <CiUser size={25} />
             </div>
           </div>
-
-          {/* Close Slide */}
-          <div
-            onClick={() => setMenu(!menu)}
-            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
-              menu ? "translate-x-full" : "translate-x-0"
-            }`}
-          ></div>
         </div>
+        {/* Close Slide */}
+        <div
+          onClick={() => setMenu(!menu)}
+          className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+            menu ? "translate-x-full" : "translate-x-0"
+          }`}
+        ></div>
       </nav>
     </div>
   );
