@@ -399,7 +399,7 @@ export default function BrandDetail() {
         {product.map((p) => (
           <div key={p.id} className="flex justify-center">
             <Link to={`/product/${p.id}`} className="group h-full">
-              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-[200px] h-full">
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-full max-w-[250px] h-full">
                 <div className="bg-white overflow-hidden max-h-[300px] mx-auto">
                   <img
                     src={p.image}
