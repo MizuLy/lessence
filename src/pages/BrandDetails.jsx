@@ -395,11 +395,11 @@ export default function BrandDetail() {
         </Link>
       </div>
 
-      <div className="min-w-[100px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4 [grid-auto-rows:400px]">
+      <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4">
         {product.map((p) => (
           <div key={p.id} className="flex justify-center">
-            <Link to={`/product/${p.id}`} className="group">
-              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-[250px] h-full">
+            <Link to={`/product/${p.id}`} className="group h-full">
+              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-[200px] h-full">
                 <div className="bg-white overflow-hidden max-h-[300px] mx-auto">
                   <img
                     src={p.image}
