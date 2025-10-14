@@ -1,6 +1,7 @@
 import Slide from "../components/Slide";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import New from "../pages/New";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
@@ -31,15 +32,22 @@ export default function Home() {
       </div>
 
       <div
+        id="new"
+        className="max-w-[1920px] mx-auto min-h-[400px] scroll-mt-24"
+      >
+        <New />
+      </div>
+
+      {/* <div
         id="about"
         className="max-w-[1920px] mx-auto min-h-[400px] scroll-mt-24"
       >
         <About />
-      </div>
+      </div> */}
 
       <div
         id="contact"
-        className="max-w-[1920px] mx-auto py-20 min-h-[400px] scroll-mt-24"
+        className="max-w-[1920px] mx-auto pb-20 min-h-[400px] scroll-mt-24"
       >
         <Contact />
       </div>

@@ -40,7 +40,13 @@ export default function Nav() {
             </li>
 
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
-              <HashLink smooth to="/#about">
+              <HashLink smooth to="/#new">
+                New
+              </HashLink>
+            </li>
+
+            <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
+              <HashLink smooth to="/about">
                 About
               </HashLink>
             </li>
@@ -394,7 +400,15 @@ export default function Nav() {
                 onClick={() => setMenu(!menu)}
                 className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500"
               >
-                <HashLink smooth to="/#about">
+                <HashLink smooth to="/#new">
+                  New
+                </HashLink>
+              </li>
+              <li
+                onClick={() => setMenu(!menu)}
+                className="text-2xl pb-2 duration-150 cursor-pointer hover:text-gray-500"
+              >
+                <HashLink smooth to="/about">
                   About
                 </HashLink>
               </li>
