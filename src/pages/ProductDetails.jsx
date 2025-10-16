@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 export default function ProductDetails() {
   const { productId } = useParams();
+  const { addToCart } = useCart();
   const allProducts = [
     {
       id: 1,
@@ -468,7 +470,16 @@ export default function ProductDetails() {
             </div>
 
             <div className="space-y-4 mt-6 flex flex-col">
-              <button className=" bg-black text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors">
+              <button
+                className="bg-black text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors"
+                onClick={() => {
+                  if (!active) alert("Please select a size first!");
+                  else {
+                    addToCart(product, active);
+                    alert(`Added ${product.name} (${active}) to cart!`);
+                  }
+                }}
+              >
                 Add to Cart
               </button>
               <Link
@@ -476,6 +487,12 @@ export default function ProductDetails() {
                 to={`/brand/${product.brand}`}
               >
                 Shop more
+              </Link>
+              <Link
+                to={"/cart"}
+                className="text-center min-w-full px-8 py-3 hover:underline"
+              >
+                Go to Cart
               </Link>
             </div>
           </div>

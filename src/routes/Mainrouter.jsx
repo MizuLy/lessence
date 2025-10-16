@@ -13,6 +13,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import BrandDetails from "../pages/BrandDetails";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
+import Checkout from "../pages/Checkout";
 
 export default function Mainrouter() {
   return (
@@ -24,6 +25,7 @@ export default function Mainrouter() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         {/* Dynamic product info */}
         <Route path="/brand/:category" element={<BrandDetails />} />
