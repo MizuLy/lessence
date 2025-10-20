@@ -160,14 +160,49 @@ export default function Nav() {
               <ul>
                 <li className="font-bold border-b-2">POPULAR NOW</li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
-                  <span className="hover:font-semibold cursor-pointer">
-                    MEN
+                  <span className="hover:font-semibold font-medium transiton-all cursor-pointer">
+                    NEW
                   </span>
                 </li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
-                  <span className="hover:font-semibold cursor-pointer">
-                    WOMEN
-                  </span>
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    CHANEL
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    DIOR
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    GUCCI
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    LOUIS VUITTON
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    YVES SAINT LAURENT
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -465,6 +500,83 @@ export default function Nav() {
           >
             <IoIosSearch size={25} />
           </div>
+
+          {/* Search panel */}
+          <div
+            className={`bg-white flex flex-col justify-center items-center fixed top-0 left-0 z-[99] shadow-md w-[80%] md:w-[40%] h-[100vh] transition-all duration-150 ${
+              search ? "-translate-x-full" : "translate-x-0"
+            }`}
+          >
+            <div className="text-3xl">Looking for something?</div>
+            <div className="w-full flex justify-center p-10">
+              <input
+                type="text"
+                placeholder="Search..."
+                className="w-[500px] px-4 py-2 outline-none shadow-xl border-b-2 border-black"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <ul>
+                <li className="font-bold border-b-2">POPULAR NOW</li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <HashLink
+                    to={"/#new"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    NEW
+                  </HashLink>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/chanel"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    CHANEL
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/dior"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    DIOR
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/gucci"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    GUCCI
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/lv"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    LOUIS VUITTON
+                  </Link>
+                </li>
+                <li onClick={() => setSearch(!search)} className="pt-2">
+                  <Link
+                    to={"/brand/ysl"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
+                    YVES SAINT LAURENT
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Close search overlay */}
+          <div
+            onClick={() => setSearch(!search)}
+            className={`fixed top-0 right-0 z-[99] w-[20%] md:w-[60%] h-[100vh] cursor-pointer ${
+              search ? "translate-x-full" : "translate-x-0"
+            }`}
+          ></div>
 
           <Link to="/cart" className="pr-5 hover:text-gray-500">
             <IoCartOutline size={25} />
