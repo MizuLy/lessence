@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+
 export default function ProductDetails() {
   const { productId } = useParams();
   const { addToCart } = useCart();
+  const [active, setActive] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
+
   const allProducts = [
     {
       id: 1,
@@ -410,10 +414,10 @@ export default function ProductDetails() {
       desc: "Striking patent leather trench with cinched waist and bold silhouette.",
     },
   ];
-  const size = ["XS", "S", "M", "L", "XL", "XXL"];
-  const [active, setActive] = useState(null);
+
   const product = allProducts.find((p) => p.id === parseInt(productId));
   if (!product) return <p className="text-white">Product not found</p>;
+
   const brandDisplayNames = {
     chanel: "Chanel",
     dior: "Dior",
@@ -424,18 +428,29 @@ export default function ProductDetails() {
   const brandName = product.brand;
   const displayName = brandDisplayNames[brandName] || brandName;
 
+  const handleAddToCart = () => {
+    if (!active) return alert("Please select a size first!");
+    addToCart(product, active);
+    setShowPopup(true);
+
+    // Hide popup after 2 seconds
+    setTimeout(() => setShowPopup(false), 2000);
+  };
+
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10 relative">
+      {/* Brand Title */}
       <div className="flex justify-center items-center mb-4">
         <Link
           className="text-3xl lg:text-5xl uppercase font-semibold animate-pulse font-josefinsans"
-          to={`/brand/${brandName}`}
+          to={`/brand/${product.brand}`}
         >
           {displayName}
         </Link>
       </div>
 
-      <div className="max-w-[900px] mx-auto flex flex-col justify-center items-center md:flex-row gap-8">
+      {/* Product Details */}
+      <div className="max-w-[900px] mx-auto flex flex-col md:flex-row gap-8">
         <div className="overflow-hidden min-w-[300px] rounded-lg">
           <img
             src={product.image}
@@ -444,60 +459,74 @@ export default function ProductDetails() {
           />
         </div>
 
-        <div className="mt-6 flex flex-wrap justify-center items-center">
-          <div className="flex flex-col">
-            <h1 className="text-3xl font-bold">{product.name}</h1>
-            <p className="text-gray-600 mt-4">{product.desc}</p>
-            <div className="flex items-center space-x-4 mt-4">
-              <span className="text-3xl font-bold text-red-600">
-                ${product.discount}
-              </span>
-              <span className="text-xl text-gray-400 line-through">
-                ${product.price}
-              </span>
-            </div>
-            <div className="flex space-x-2 mt-4">
-              {size.map((s) => (
-                <button
-                  onClick={() => setActive(s)}
-                  className={`w-10 h-10 bg-gray-300 hover:bg-gray-600 hover:text-white duration-300 ${
-                    active === s ? "bg-gray-600 text-white" : "bg-gray-300"
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
+        <div className="flex flex-col justify-start">
+          <h1 className="text-3xl font-bold">{product.name}</h1>
+          <p className="text-gray-600 mt-4">{product.desc}</p>
 
-            <div className="space-y-4 mt-6 flex flex-col">
+          <div className="flex items-center space-x-4 mt-4">
+            <span className="text-3xl font-bold text-red-600">
+              ${product.discount}
+            </span>
+            <span className="text-xl text-gray-400 line-through">
+              ${product.price}
+            </span>
+          </div>
+
+          {/* Sizes */}
+          <div className="flex space-x-2 mt-4">
+            {["XS", "S", "M", "L", "XL", "XXL"].map((s) => (
               <button
-                className="bg-black text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors"
-                onClick={() => {
-                  if (!active) alert("Please select a size first!");
-                  else {
-                    addToCart(product, active);
-                    alert(`Added ${product.name} (${active}) to cart!`);
-                  }
-                }}
+                key={s}
+                onClick={() => setActive(s)}
+                className={`w-10 h-10 rounded ${
+                  active === s ? "bg-gray-600 text-white" : "bg-gray-300"
+                } hover:bg-gray-600 hover:text-white transition`}
               >
-                Add to Cart
+                {s}
               </button>
-              <Link
-                className="bg-gray-500 text-center text-white min-w-full px-8 py-3 hover:bg-gray-800 transition-colors"
-                to={`/brand/${product.brand}`}
-              >
-                Shop more
-              </Link>
-              <Link
-                to={"/cart"}
-                className="text-center min-w-full px-8 py-3 hover:underline"
-              >
-                Go to Cart
-              </Link>
-            </div>
+            ))}
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-col space-y-4 mt-6">
+            <button
+              onClick={handleAddToCart}
+              className="bg-black text-white px-8 py-3 hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+            <Link
+              className="bg-gray-500 text-white px-8 py-3 hover:bg-gray-800 transition text-center"
+              to={`/brand/${product.brand}`}
+            >
+              Shop more
+            </Link>
+            <Link className="px-8 py-3 text-center hover:underline" to="/cart">
+              Go to Cart
+            </Link>
           </div>
         </div>
       </div>
+
+      {/* Popup */}
+      {showPopup && (
+        <div className="fixed bottom-1/2 left-1/2 transform -translate-x-1/2 bg-white text-green-500 px-6 py-3 rounded-xl shadow-lg animate-fade-in-out z-50">
+          Item has been added to cart!
+        </div>
+      )}
+
+      {/* Tailwind Animations */}
+      <style>{`
+        @keyframes fade-in-out {
+          0% { opacity: 0; transform: translateY(20px); }
+          10% { opacity: 1; transform: translateY(0); }
+          90% { opacity: 1; transform: translateY(0); }
+          100% { opacity: 0; transform: translateY(-20px); }
+        }
+        .animate-fade-in-out {
+          animation: fade-in-out 2s ease forwards;
+        }
+      `}</style>
     </div>
   );
 }

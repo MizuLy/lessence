@@ -10,23 +10,23 @@ export default function About() {
         About Us
       </h1>
       <p className="text-lg lg:text-xl font-medium">
-        Welcome to <b>AppAnh</b>, where fashion and beauty converge at the
+        Welcome to <b>L’Essence</b>, where fashion and beauty converge at the
         highest level. We are redefining the shopping experience by bringing the
         latest trends in men’s and women’s clothing alongside luxury beauty
         products under one roof.
         <br />
-        <br /> At <b>AppAnh</b>, we don’t just sell clothes and cosmetics — we
-        set the standard. Every piece in our collection is carefully curated to
-        reflect style, quality, and sophistication. From cutting-edge streetwear
-        to timeless classics, and from premium skincare to must-have cosmetics,
-        we provide everything you need to express your individuality with
-        confidence.
+        <br /> At <b>L’Essence</b>, we don’t just sell clothes and cosmetics —
+        we set the standard. Every piece in our collection is carefully curated
+        to reflect style, quality, and sophistication. From cutting-edge
+        streetwear to timeless classics, and from premium skincare to must-have
+        cosmetics, we provide everything you need to express your individuality
+        with confidence.
         <br />
         <br /> Our mission is simple: to be the ultimate destination for
         fashion-forward individuals who demand excellence, style, and
-        innovation. Join the <b>AppAnh</b> experience and discover a world where
-        trendsetting meets timeless elegance, and shopping becomes an inspiring
-        journey, not just a chore.
+        innovation. Join the <b>L’Essence</b> experience and discover a world
+        where trendsetting meets timeless elegance, and shopping becomes an
+        inspiring journey, not just a chore.
       </p>
       <br />
       <div className="w-full my-8 flex justify-center items-center">

@@ -4,24 +4,21 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   const addToCart = (product, size) => {
-    // Ensure price is numeric
     const price = Number(product.discount.toString().replace(/,/g, ""));
-
     setCart((prev) => {
       const existing = prev.find(
         (item) => item.id === product.id && item.size === size
       );
       if (existing) {
-        // Increase quantity if product+size exists
         return prev.map((item) =>
           item.id === product.id && item.size === size
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        // Add new item
         return [...prev, { ...product, size, quantity: 1, discount: price }];
       }
     });
@@ -38,11 +35,34 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (id, size) => {
-    setCart((prev) => prev.filter((item) => !(item.id === id && item.size === size)));
+    setCart((prev) =>
+      prev.filter((item) => !(item.id === id && item.size === size))
+    );
+  };
+
+  const addOrder = (customer) => {
+    if (cart.length === 0) return;
+    const newOrder = {
+      id: Date.now(),
+      date: new Date().toLocaleString(),
+      customer,
+      items: cart,
+    };
+    setOrders((prev) => [...prev, newOrder]);
+    setCart([]); // Clear cart after order
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, updateQuantity, removeFromCart }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        orders,
+        addToCart,
+        updateQuantity,
+        removeFromCart,
+        addOrder,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

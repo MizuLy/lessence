@@ -14,6 +14,7 @@ import BrandDetails from "../pages/BrandDetails";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
+import Orders from "../pages/Order";
 
 export default function Mainrouter() {
   return (
@@ -26,6 +27,7 @@ export default function Mainrouter() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order" element={<Orders />} />
 
         {/* Dynamic product info */}
         <Route path="/brand/:category" element={<BrandDetails />} />

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
         <h1 className="text-3xl font-josefinsans mb-3">
           <Link to={"/#slide"}>
-            <span className="font-bold">App</span>Anh
+            <span className="font-bold">L’</span>Essence
           </Link>
         </h1>
         <p>
@@ -38,7 +38,7 @@ export default function Footer() {
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
         <h1 className="text-3xl font-josefinsans mb-3">Price</h1>
         <p>Contact for more info</p>
-        <p className="cursor-pointer mt-2">appanh@cambodia.com</p>
+        <p className="cursor-pointer mt-2">lessence@cambodia.com</p>
       </div>
 
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6">
