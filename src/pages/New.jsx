@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -90,20 +90,22 @@ export default function NewCollection() {
         {prodImg.map((p) => (
           <SwiperSlide key={p.id}>
             <div className="bg-white overflow-hidden hover:scale-105 transition">
-              {/* Fixed aspect ratio box */}
-              <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h2 className="font-semibold font-instrumentsans text-lg text-ellipsis overflow-hidden whitespace-nowrap">
-                  {p.name}
-                </h2>
-                <p className="text-green-500 font-medium mt-1">${p.price}</p>
-              </div>
+              <Link to={`/product/${p.id}`}>
+                {/* Fixed aspect ratio box */}
+                <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h2 className="font-semibold font-instrumentsans text-lg text-ellipsis overflow-hidden whitespace-nowrap">
+                    {p.name}
+                  </h2>
+                  <p className="text-green-500 font-medium mt-1">${p.price}</p>
+                </div>
+              </Link>
             </div>
           </SwiperSlide>
         ))}
