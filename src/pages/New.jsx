@@ -1,17 +1,10 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
-
-export default function App() {
-  const [swiperRef, setSwiperRef] = useState(null);
+export default function NewCollection() {
   const prodImg = [
     {
       id: 1,
@@ -44,29 +37,45 @@ export default function App() {
   ];
 
   return (
-    <>
-      <h1 className="text-3xl lg:text-5xl font-bold text-center font-josefinsans my-10">
+    <div className="max-w-6xl mx-auto py-10">
+      <h1 className="text-3xl lg:text-5xl font-bold text-center font-josefinsans mb-8">
         NEW COLLECTION
       </h1>
+
       <Swiper
-        onSwiper={setSwiperRef}
         slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        spaceBetween={20}
+        navigation
+        modules={[Navigation]}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="max-w-6xl mx-auto"
       >
         {prodImg.map((p) => (
           <SwiperSlide key={p.id}>
-            <img src={p.image} alt="" />
-            <div className="bg-white text-start">
-              <h2 className="font-semibold font-instrumentsans">{p.name}</h2>
-              <p className="text-green-500">${p.price}</p>
+            <div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+              {/* Fixed aspect ratio box */}
+              <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">
+                <img
+                  src={p.image}
+                  alt={p.name}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="font-semibold font-instrumentsans text-lg">
+                  {p.name}
+                </h2>
+                <p className="text-green-500 font-medium mt-1">${p.price}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
