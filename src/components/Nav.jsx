@@ -160,13 +160,16 @@ export default function Nav() {
               <ul>
                 <li className="font-bold border-b-2">POPULAR NOW</li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
-                  <span className="hover:font-semibold font-medium transiton-all cursor-pointer">
+                  <HashLink
+                    to={"/#new"}
+                    className="hover:font-semibold font-medium transiton-all cursor-pointer"
+                  >
                     NEW
-                  </span>
+                  </HashLink>
                 </li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
                   <Link
-                    to={"/brand/gucci"}
+                    to={"/brand/chanel"}
                     className="hover:font-semibold font-medium transiton-all cursor-pointer"
                   >
                     CHANEL
@@ -174,7 +177,7 @@ export default function Nav() {
                 </li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
                   <Link
-                    to={"/brand/gucci"}
+                    to={"/brand/dior"}
                     className="hover:font-semibold font-medium transiton-all cursor-pointer"
                   >
                     DIOR
@@ -190,7 +193,7 @@ export default function Nav() {
                 </li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
                   <Link
-                    to={"/brand/gucci"}
+                    to={"/brand/lv"}
                     className="hover:font-semibold font-medium transiton-all cursor-pointer"
                   >
                     LOUIS VUITTON
@@ -198,7 +201,7 @@ export default function Nav() {
                 </li>
                 <li onClick={() => setSearch(!search)} className="pt-2">
                   <Link
-                    to={"/brand/gucci"}
+                    to={"/brand/ysl"}
                     className="hover:font-semibold font-medium transiton-all cursor-pointer"
                   >
                     YVES SAINT LAURENT
