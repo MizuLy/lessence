@@ -490,7 +490,7 @@ export default function Nav() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className="text-2xl font-bold font-josefinsans pt-5">
+            <h1 className="text-2xl font-bold font-josefinsans pt-3">
               L'Essence
             </h1>
           </HashLink>
@@ -612,7 +612,7 @@ export default function Nav() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h1 className="text-2xl font-bold font-josefinsans pt-5">
+              <h1 className="text-2xl font-bold font-josefinsans pt-3">
                 L'Essence
               </h1>
             </HashLink>
