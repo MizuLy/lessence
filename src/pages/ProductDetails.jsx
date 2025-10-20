@@ -510,23 +510,23 @@ export default function ProductDetails() {
 
       {/* Popup */}
       {showPopup && (
-        <div className="fixed bottom-1/2 left-1/2 transform -translate-x-1/2 bg-white text-green-500 px-6 py-3 rounded-xl shadow-lg animate-fade-in-out z-50">
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 bg-white text-green-500 px-6 py-3 rounded-xl shadow-lg animate-fade-in-out z-50">
           Item has been added to cart!
         </div>
       )}
 
       {/* Tailwind Animations */}
       <style>{`
-        @keyframes fade-in-out {
-          0% { opacity: 0; transform: translateY(20px); }
-          10% { opacity: 1; transform: translateY(0); }
-          90% { opacity: 1; transform: translateY(0); }
-          100% { opacity: 0; transform: translateY(-20px); }
-        }
-        .animate-fade-in-out {
-          animation: fade-in-out 2s ease forwards;
-        }
-      `}</style>
+  @keyframes fade-in-out {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+    10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+  }
+  .animate-fade-in-out {
+    animation: fade-in-out 2s ease forwards;
+  }
+`}</style>
     </div>
   );
 }
