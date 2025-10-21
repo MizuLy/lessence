@@ -48,7 +48,7 @@ export default function Footer() {
         <h1 className="text-3xl font-josefinsans mb-3">About</h1>
         <p className="cursor-pointer">Terms & Conditions</p>
         <p className="cursor-pointer mt-2">Privacy Policy</p>
-        <p className="absolute bottom-5 t-2">
+        <p className="absolute bottom-5 mt-2">
           &copy; {new Date().getFullYear()} L’Essence. All rights reserved.
         </p>
       </div>
