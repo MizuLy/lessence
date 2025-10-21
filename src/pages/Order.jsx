@@ -12,7 +12,7 @@ export default function Orders() {
 
   return (
     <div className="p-6 max-w-2xl mx-auto min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6 text-center">Your Orders</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Your Receipts</h1>
 
       {orders.length === 0 ? (
         <p className="text-center text-gray-600">No orders yet.</p>
