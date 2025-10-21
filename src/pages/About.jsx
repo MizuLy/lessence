@@ -5,11 +5,14 @@ export default function About() {
     "https://media.istockphoto.com/id/882060132/photo/interior-of-modern-fashion-shop.jpg?s=612x612&w=0&k=20&c=GKrywt8nfPN3vIb4FPcbdS3Jvnzis1-3xkt6cbA7xgc=",
   ];
   return (
-    <div className="text-center py-10 px-16 lg:px-20 h-[90vh]">
-      <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6">
+    <div className="text-center py-10 px-16 lg:px-20">
+      <h1
+        data-aos="fade-right"
+        className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6"
+      >
         About Us
       </h1>
-      <p className="text-lg lg:text-xl font-medium">
+      <p data-aos="fade-up" className="text-lg lg:text-xl font-medium">
         Welcome to <b>L’Essence</b>, where fashion and beauty converge at the
         highest level. We are redefining the shopping experience by bringing the
         latest trends in men’s and women’s clothing alongside luxury beauty
@@ -29,7 +32,10 @@ export default function About() {
         inspiring journey, not just a chore.
       </p>
       <br />
-      <div className="w-full my-8 flex justify-center items-center">
+      <div
+        data-aos="zoom-in"
+        className="w-full my-8 flex justify-center items-center"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {gridImg.map((i) => (
             <div

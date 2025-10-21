@@ -15,7 +15,7 @@ export default function Mainlayout() {
         <Mainrouter />
       </div>
 
-      <div className="">
+      <div>
         <Footer />
       </div>
     </div>
