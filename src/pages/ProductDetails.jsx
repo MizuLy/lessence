@@ -153,11 +153,11 @@ export default function ProductDetails() {
     {
       id: 15,
       brand: "dior",
-      name: "Tweed Two-Piece Set with Gold Buttons",
+      name: "Haute Rouge Coat Gown",
       price: 5900,
       discount: 5015,
       image:
-        "https://media.gettyimages.com/id/2196360607/photo/paris-france-jennie-kim-attends-the-chanel-haute-couture-spring-summer-2025-show-as-part-of.jpg?s=612x612&w=0&k=20&c=66wt7PYfjnJ0cqSUWobg86IBJ5Mt78BlCOAKuRnpTxY=",
+        "https://imgs.search.brave.com/go6HkBUlXH4q3kG7gJWS7U-TVzIBQ6tAyMHAt7tug80/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/c3BvdHRlZC1hdC10/aGUtY2hyaXN0aWFu/LWRpb3ItZncyNC1z/aG93LWF0LXBhcmlz/LWZhc2hpb24tdjAt/eXZpd3JjOXg4N2xj/MS5wbmc_d2lkdGg9/MTI4MyZmb3JtYXQ9/cG5nJmF1dG89d2Vi/cCZzPTgxNmM0YjAw/NGJhMjFlM2EwYzg1/YTMxMjJkYzU0NzFk/YWNlYWNkMWQ",
       desc: "Classic tweed set with cropped jacket and matching skirt with gold accents.",
     },
     {
