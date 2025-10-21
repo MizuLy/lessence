@@ -386,7 +386,7 @@ export default function BrandDetail() {
   const displayName = brandDisplayNames[brandName] || brandName;
   return (
     <div className="flex flex-col items-center">
-      <div className="pt-10 flex justify-center items-center">
+      <div data-aos="fade-right" className="pt-10 flex justify-center items-center">
         <Link
           className="text-3xl lg:text-5xl animate-pulse uppercase font-semibold font-josefinsans"
           to={"/"}
@@ -397,7 +397,7 @@ export default function BrandDetail() {
 
       <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 px-4">
         {product.map((p) => (
-          <div key={p.id} className="flex justify-center">
+          <div data-aos="zoom-in" key={p.id} className="flex justify-center">
             <Link to={`/product/${p.id}`} className="group h-full">
               <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col w-full max-w-[250px] h-full">
                 <div className="bg-white overflow-hidden max-h-[300px] mx-auto">

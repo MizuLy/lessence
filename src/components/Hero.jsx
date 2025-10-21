@@ -3,14 +3,20 @@ import { HashLink } from "react-router-hash-link";
 export default function Hero() {
   return (
     <div className="max-w-screen pb-40">
-      <div className="w-full h-[900px] overflow-hidden relative">
+      <div
+        data-aos="zoom-out"
+        className="w-full h-[900px] overflow-hidden relative"
+      >
         <img
           src="/Model/modelinblack.jpg"
           alt=""
           className="object-cover w-full h-full"
         />
 
-        <div className="absolute top-[35%] left-[50%] z-[10]">
+        <div
+          data-aos="fade-up"
+          className="absolute top-[35%] left-[50%] z-[10]"
+        >
           <h1 className="text-4xl lg:text-6xl font-bold text-white">
             Elevate Your Style. Embrace Your Beauty.
           </h1>

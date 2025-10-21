@@ -9,10 +9,16 @@ export default function Brand() {
   ];
   return (
     <div className="text-center flex flex-col justify-center items-center pb-20 pt-10 bg-gray-200">
-      <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-10">
+      <h1
+        data-aos="fade-right"
+        className="text-3xl lg:text-5xl font-bold font-josefinsans mb-10"
+      >
         Our Partnership
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8"
+      >
         {brands.map((brand) => (
           <Link key={brand.name} to={`/brand/${brand.name}`}>
             <div className="w-[120px] h-[120px] flex justify-center items-center overflow-hidden shadow-lg rounded-xl p-5 hover:scale-105 duration-150 bg-white">

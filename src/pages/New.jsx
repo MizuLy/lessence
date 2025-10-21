@@ -70,7 +70,7 @@ export default function NewCollection() {
 
   return (
     <div className="max-w-6xl mx-auto py-10">
-      <h1 className="text-3xl lg:text-5xl font-bold text-center font-josefinsans mb-8">
+      <h1 data-aos="fade-right" className="text-3xl lg:text-5xl font-bold text-center font-josefinsans mb-8">
         NEW COLLECTION
       </h1>
 
@@ -89,7 +89,10 @@ export default function NewCollection() {
       >
         {prodImg.map((p) => (
           <SwiperSlide key={p.id}>
-            <div className="bg-white overflow-hidden hover:scale-105 transition">
+            <div
+              data-aos="fade-up"
+              className="bg-white overflow-hidden hover:scale-105 transition"
+            >
               <Link to={`/product/${p.id}`}>
                 {/* Fixed aspect ratio box */}
                 <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">

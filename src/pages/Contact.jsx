@@ -1,10 +1,16 @@
 export default function Contact() {
   return (
     <div className="text-center py-10 px-5 lg:px-20 flex flex-col justify-center items-center">
-      <h1 className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6">
+      <h1
+        data-aos="fade-right"
+        className="text-3xl lg:text-5xl font-bold font-josefinsans mb-6"
+      >
         Contact us through
       </h1>
-      <div className="w-full max-w-lg bg-gray-200 rounded-2xl shadow-lg p-8">
+      <div
+        data-aos="fade-up"
+        className="w-full max-w-lg bg-gray-200 rounded-2xl shadow-lg p-8"
+      >
         <div className="flex flex-col gap-5">
           <div className="flex flex-col items-start">
             <label htmlFor="email" className="text-lg font-semibold mb-2">
