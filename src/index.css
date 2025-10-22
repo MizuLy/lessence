@@ -13,6 +13,10 @@ body {
   @apply font-instrumentsans;
 }
 
+/* For Debugging * {
+  outline: 1px solid red;
+} */
+
 /* Slider Bar */
 
 #app {

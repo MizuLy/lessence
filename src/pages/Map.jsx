@@ -14,7 +14,7 @@ export default function MapPing() {
   }, []);
 
   return (
-    <div className="mx-auto flex flex-col lg:flex-row justify-center items-start bg-white shadow-lg rounded-xl overflow-hidden w-full max-w-[1000px] mb-6 text-sm md:text-lg">
+    <div className="mx-4 my-6 lg:mx-auto flex flex-col lg:flex-row justify-center items-start bg-white shadow-lg overflow-hidden w-full max-w-[1000px] mb-6 text-sm md:text-lg">
       {/* Map Section */}
       <div
         data-aos="fade-up"

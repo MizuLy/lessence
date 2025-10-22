@@ -1,3 +1,4 @@
+// VideoSlider.jsx
 import { useState } from "react";
 
 const slides = [
@@ -20,10 +21,7 @@ export default function VideoSlider() {
   };
 
   return (
-    <div
-      data-aos="fade-up"
-      className="w-full h-[500px] md:h-[700px] lg:h-[900px] overflow-hidden relative"
-    >
+    <div className="w-full h-[500px] md:h-[700px] lg:h-[900px] overflow-hidden relative">
       {slides[current].type === "video" ? (
         <video
           key={current}
@@ -31,19 +29,32 @@ export default function VideoSlider() {
           muted
           autoPlay
           playsInline
-          onEnded={nextSlide} // Move to next slide when video ends
+          onEnded={nextSlide}
         >
           <source src={slides[current].src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       ) : (
         <img
+          key={current}
           src={slides[current].src}
           alt={`Slide ${current}`}
           className="w-full h-full object-cover"
-          onClick={nextSlide} // Optional: click to go to next
+          onClick={nextSlide}
         />
       )}
+      {/* Optional navigation dots */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            className={`w-3 h-3 rounded-full ${
+              idx === current ? "bg-white" : "bg-gray-500"
+            }`}
+            onClick={() => setCurrent(idx)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

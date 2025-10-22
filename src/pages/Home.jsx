@@ -40,9 +40,7 @@ export default function Home() {
         <New />
       </div>
 
-      <div>
-        <Video />
-      </div>
+      <Video />
 
       {/* <div
         id="about"
