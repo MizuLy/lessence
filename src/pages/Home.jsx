@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import Brand from "./Brand";
+import Video from "./Video";
+import Map from "./Map";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -38,16 +40,26 @@ export default function Home() {
         <New />
       </div>
 
+      <div>
+        <Video />
+      </div>
+
       {/* <div
         id="about"
         className="max-w-[1920px] mx-auto min-h-[400px] scroll-mt-24"
       >
         <About />
       </div> */}
+      <div
+        id="location"
+        className="max-w-[1920px] flex justify-center items-center min-h-[800px] scroll-mt-24"
+      >
+        <Map />
+      </div>
 
       <div
         id="contact"
-        className="max-w-[1920px] mx-auto pb-20 min-h-[400px] scroll-mt-24"
+        className="max-w-[1920px] mx-auto pb-20 min-h-[800px] scroll-mt-24"
       >
         <Contact />
       </div>

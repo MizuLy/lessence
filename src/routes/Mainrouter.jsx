@@ -15,6 +15,7 @@ import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import Orders from "../pages/Order";
+import MapPing from "../pages/Map";
 
 export default function Mainrouter() {
   return (
@@ -25,6 +26,7 @@ export default function Mainrouter() {
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/location" element={<MapPing />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/order" element={<Orders />} />

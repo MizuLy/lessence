@@ -7,30 +7,37 @@ export default function Contact() {
       >
         Contact us through
       </h1>
-      <div
-        data-aos="fade-up"
-        className="w-full max-w-lg bg-gray-200 rounded-2xl shadow-lg p-8"
-      >
+      <div className="w-full max-w-lg bg-gray-50 shadow-lg p-8">
         <div className="flex flex-col gap-5">
           <div className="flex flex-col items-start">
-            <label htmlFor="email" className="text-lg font-semibold mb-2">
+            <label
+              data-aos="fade-left"
+              htmlFor="email"
+              className="text-lg font-semibold mb-2"
+            >
               Email
             </label>
             <input
+              data-aos="fade-left"
               type="email"
               placeholder="Enter your email"
-              className="w-full border px-4 py-2 rounded-xl outline-none"
+              className="w-full px-4 py-2 outline-none"
             />
           </div>
 
           <div className="flex flex-col items-start">
-            <label htmlFor="message" className="text-lg font-semibold mb-2">
+            <label
+              data-aos="fade-left"
+              htmlFor="message"
+              className="text-lg font-semibold mb-2"
+            >
               Message
             </label>
             <textarea
+              data-aos="fade-left"
               rows={5}
               placeholder="Write your message..."
-              className="w-full border px-4 py-2 rounded-xl outline-none"
+              className="w-full px-4 py-2 outline-none"
             ></textarea>
           </div>
         </div>

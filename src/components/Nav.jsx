@@ -125,6 +125,11 @@ export default function Nav() {
               </HashLink>
             </li>
             <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
+              <HashLink smooth to="/#location">
+                Location
+              </HashLink>
+            </li>
+            <li className="text-xl duration-150 cursor-pointer hover:text-gray-500">
               <HashLink smooth to="/#contact">
                 Contact
               </HashLink>
@@ -249,7 +254,7 @@ export default function Nav() {
 
       {/* Account Modal */}
       <div
-        className={`bg-white rounded-2xl flex flex-col justify-center items-center fixed z-[100] shadow-2xl w-[90%] sm:w-[450px] max-h-[90vh] overflow-y-auto p-8 transition-all duration-300 ${
+        className={`bg-white flex flex-col justify-center items-center fixed z-[100] shadow-2xl w-[90%] sm:w-[450px] max-h-[90vh] overflow-y-auto p-8 transition-all duration-300 ${
           account
             ? "hidden"
             : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 scale-100"
@@ -272,7 +277,7 @@ export default function Nav() {
                       placeholder="Enter your username"
                       value={inputUser}
                       onChange={(e) => setInputUser(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -284,7 +289,7 @@ export default function Nav() {
                       placeholder="Enter your email"
                       value={inputEmail}
                       onChange={(e) => setInputEmail(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -296,7 +301,7 @@ export default function Nav() {
                       placeholder="Create a password"
                       value={inputPass}
                       onChange={(e) => setInputPass(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -321,7 +326,7 @@ export default function Nav() {
                   </div>
                   <button
                     onClick={handleSignUp}
-                    className="w-full px-4 py-3 mt-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
+                    className="w-full px-4 py-3 mt-2 bg-black text-white font-medium hover:bg-gray-800 transition-colors"
                   >
                     Sign Up
                   </button>
@@ -351,7 +356,7 @@ export default function Nav() {
                       placeholder="Enter your username"
                       value={inputUser}
                       onChange={(e) => setInputUser(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -363,12 +368,12 @@ export default function Nav() {
                       placeholder="Enter your password"
                       value={inputPass}
                       onChange={(e) => setInputPass(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <button
                     onClick={handleLogin}
-                    className="w-full px-4 py-3 mt-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
+                    className="w-full px-4 py-3 mt-2 bg-black text-white font-medium hover:bg-gray-800 transition-colors"
                   >
                     Login
                   </button>
@@ -410,7 +415,7 @@ export default function Nav() {
                     placeholder="Username"
                     value={inputUser || profile.username}
                     onChange={(e) => setInputUser(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -422,7 +427,7 @@ export default function Nav() {
                     placeholder="Email"
                     value={inputEmail || profile.email}
                     onChange={(e) => setInputEmail(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -438,7 +443,7 @@ export default function Nav() {
                 </div>
                 <button
                   onClick={handleSaveEdit}
-                  className="w-full px-4 py-3 mt-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+                  className="w-full px-4 py-3 mt-2 bg-green-600 text-white font-medium hover:bg-green-700 transition-colors"
                 >
                   Save Changes
                 </button>
@@ -455,13 +460,13 @@ export default function Nav() {
                 <div className="flex gap-3 w-full">
                   <button
                     onClick={() => setIsEditing(true)}
-                    className="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                    className="flex-1 px-4 py-3 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
                   >
                     Edit Profile
                   </button>
                   <button
                     onClick={handleLogout}
-                    className="flex-1 px-4 py-3 bg-gray-700 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
+                    className="flex-1 px-4 py-3 bg-gray-700 text-white font-medium hover:bg-gray-800 transition-colors"
                   >
                     Logout
                   </button>
@@ -641,6 +646,14 @@ export default function Nav() {
             >
               <HashLink smooth to="/about">
                 About
+              </HashLink>
+            </li>
+            <li
+              onClick={() => setMenu(true)}
+              className="text-2xl pb-2 hover:text-gray-500"
+            >
+              <HashLink smooth to="/#location">
+                Location
               </HashLink>
             </li>
             <li
