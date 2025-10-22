@@ -69,8 +69,11 @@ export default function NewCollection() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-10">
-      <h1 data-aos="fade-right" className="text-3xl lg:text-5xl font-bold text-center font-josefinsans mb-8">
+    <div className="max-w-6xl mx-4 my-6 lg:mx-auto py-10">
+      <h1
+        data-aos="fade-right"
+        className="text-3xl lg:text-5xl font-bold text-center font-josefinsans mb-8"
+      >
         NEW COLLECTION
       </h1>
 
