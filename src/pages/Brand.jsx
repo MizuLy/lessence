@@ -21,7 +21,7 @@ export default function Brand() {
       >
         {brands.map((brand) => (
           <Link key={brand.name} to={`/brand/${brand.name}`}>
-            <div className="w-[120px] h-[120px] flex justify-center items-center overflow-hidden shadow-lg rounded-xl p-5 hover:scale-105 duration-150 bg-white">
+            <div className="w-[120px] h-[120px] flex justify-center items-center overflow-hidden shadow-lg p-5 hover:scale-105 duration-150 bg-white">
               <img
                 src={`/Logo/${brand.logo}`}
                 className="object-contain max-w-full max-h-full"

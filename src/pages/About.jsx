@@ -1,8 +1,9 @@
 export default function About() {
   const gridImg = [
-    "https://media.gettyimages.com/photos/couple-shopping-at-a-clothing-store-and-using-facemasks-during-the-picture-id1271626545?k=20&m=1271626545&s=612x612&w=0&h=XHXXGdD6za-dRt2thBEwNozY0GWq5P0HgBM7ui0xhGk=",
-    "https://media.istockphoto.com/id/1835591115/photo/interior-of-modern-clothes-shop.jpg?s=612x612&w=0&k=20&c=Lwlc0ipxgzCOVyHmuY-_rx3_KFSWCJE6mfjwswf3JZE=",
-    "https://media.istockphoto.com/id/882060132/photo/interior-of-modern-fashion-shop.jpg?s=612x612&w=0&k=20&c=GKrywt8nfPN3vIb4FPcbdS3Jvnzis1-3xkt6cbA7xgc=",
+    "/Random/vogue.webp",
+    "/Random/officer.webp",
+    "/Random/lotofmodel.webp",
+    "/Random/goldenRoom.webp",
   ];
   return (
     <div className="text-center py-10 px-16 lg:px-20">
@@ -36,7 +37,7 @@ export default function About() {
         data-aos="zoom-in"
         className="w-full my-8 flex justify-center items-center"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {gridImg.map((i) => (
             <div
               key={i}
