@@ -2,6 +2,7 @@
 import { MapContainer, TileLayer, Marker, CircleMarker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MapPing() {
   const [radius, setRadius] = useState(10);
@@ -56,8 +57,12 @@ export default function MapPing() {
           Central Phnom Penh, Cambodia
         </span>
         <div data-aos="fade-left">
-          <span className="font-bold">Coordinates: </span>
-          <span className="font-instrumentsans">11.5564° N, 104.9282° E</span>
+          <span className="font-bold">Google Map Link: </span>
+          <Link to={"https://maps.app.goo.gl/J6DgZ4msqMwnUyG79"}>
+            <span className="font-instrumentsans">
+              https://maps.app.goo.gl/J6DgZ4msqMwnUyG79
+            </span>
+          </Link>
         </div>
         <div data-aos="fade-left">
           <span className="font-bold">Phone: </span>
