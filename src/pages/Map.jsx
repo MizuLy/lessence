@@ -48,7 +48,7 @@ export default function MapPing() {
         {/* Gray Overlay */}
         {showOverlay && (
           <div className="absolute inset-0 bg-gray-200 bg-opacity-70 z-[50] flex items-center justify-center text-gray-700 font-semibold text-center text-sm md:text-base select-none">
-            Hold Ctrl and scroll to zoom the map
+            Hold Ctrl + Scroll to zoom the map
           </div>
         )}
 
