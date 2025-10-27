@@ -1,3 +1,5 @@
+import { MdNavigateNext } from "react-icons/md";
+
 export default function Contact() {
   return (
     <div className="text-center py-10 px-5 lg:px-20 flex flex-col justify-center items-center">
@@ -40,6 +42,12 @@ export default function Contact() {
               className="w-full px-4 py-2 outline-none"
             ></textarea>
           </div>
+          <button data-aos="fade-left" className="bg-black text-white text-center text-lg hover:bg-gray-800 w-full py-4 flex justify-center items-center">
+            SEND
+            <span>
+              <MdNavigateNext size={25}/>
+            </span>
+          </button>
         </div>
       </div>
     </div>

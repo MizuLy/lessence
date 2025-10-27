@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
         <h1 data-aos="fade-left" className="text-3xl font-josefinsans mb-3">
           <Link to={"/#slide"}>
-            <span className="font-bold">L’</span>Essence
+            <span className="font-bold">L’</span>ESSENCE
           </Link>
         </h1>
         <p>
@@ -39,7 +39,7 @@ export default function Footer() {
 
       <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-start px-6 mb-6 md:mb-0">
         <h1 data-aos="fade-left" className="text-3xl font-josefinsans mb-3">
-          Price
+          Contact
         </h1>
         <p>Contact for more info</p>
         <p className="cursor-pointer mt-2">lessence@cambodia.com</p>
@@ -52,7 +52,7 @@ export default function Footer() {
         <p className="cursor-pointer">Terms & Conditions</p>
         <p className="cursor-pointer mt-2">Privacy Policy</p>
         <p className=" mt-2">
-          &copy; {new Date().getFullYear()} L’Essence. All rights reserved.
+          &copy; {new Date().getFullYear()} L’ESSENCE. All rights reserved.
         </p>
       </div>
     </div>

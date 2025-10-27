@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound404 from "../error/NotFound404";
 import Contact from "../pages/Contact";
-import Beauty from "../pages/Beauty";
 import About from "../pages/About";
 import Chanel from "../pages/Chanel";
 import Dior from "../pages/Dior";
@@ -23,7 +22,6 @@ export default function Mainrouter() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/beauty" element={<Beauty />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<MapPing />} />

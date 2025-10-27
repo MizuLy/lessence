@@ -42,11 +42,11 @@ export default function ProductDetails() {
     {
       id: 4,
       brand: "chanel",
-      name: "Pale Pink Chiffon Cape Dress with Gold Accents",
+      name: "Pale White Chiffon Cape Dress with Gold Accents",
       price: "9,750",
       discount: "8,100",
       image:
-        "https://media.gettyimages.com/id/1954918496/photo/paris-france-a-model-walks-the-runway-during-the-chanel-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=MfkKGhsK1tZ4pigonwV_jpCSEKx63OV7b2688ZlMXP0=",
+        "https://assets.vogue.com/photos/6810e98e3cf217b40624cb64/master/w_1280,c_limit/00001-chanel-resort-2026-credit-gorunway.jpg",
       desc: "Ethereal chiffon dress with attached cape and gold embroidered accents.",
     },
     {
@@ -92,80 +92,72 @@ export default function ProductDetails() {
 
     {
       id: 9,
-      brand: "dior",
       name: "Pleated Tulle Midi Skirt with Pearl Trim",
-      price: 4200,
-      discount: 3550,
+      price: "4,200",
+      discount: "3,550",
       image:
         "https://media.gettyimages.com/id/1952520010/photo/paris-france-rihanna-attends-the-christian-dior-haute-couture-spring-summer-2024-show-as-part.jpg?s=612x612&w=0&k=20&c=pkqEStoRHgZiqqU-sIk5sgHKqlED5zfuGWuaJgCBn6Q=",
       desc: "Romantic tulle midi skirt with delicate pearl trim and soft pleating.",
     },
     {
       id: 10,
-      brand: "dior",
       name: "Embroidered Silk Blazer with Structured Shoulders",
-      price: 6800,
-      discount: 5780,
+      price: "6,800",
+      discount: "5,780",
       image:
         "https://media.gettyimages.com/id/1952614854/photo/paris-france-anya-taylor-joy-attends-the-christian-dior-haute-couture-spring-summer-2024-show.jpg?s=612x612&w=0&k=20&c=YVZlUVUCe5BNfstD3wvQgU2I_RiFJIfRgBDA1vyVCwE=",
       desc: "Luxurious silk blazer featuring intricate embroidery and strong shoulder lines.",
     },
     {
       id: 11,
-      brand: "dior",
       name: "Floral Jacquard A-Line Dress with V-Neck",
-      price: 5400,
-      discount: 4590,
+      price: "5,400",
+      discount: "4,590",
       image:
         "https://media.gettyimages.com/id/1953444223/photo/paris-france-a-model-walks-the-runway-during-the-christian-dior-haute-couture-spring-summer.jpg?s=612x612&w=0&k=20&c=awgoCzkUflbeGrVlz5xskJM3eXPrIU8r1tfzYcR-B48=",
       desc: "Elegant floral jacquard dress with flattering A-line silhouette and V-neckline.",
     },
     {
       id: 12,
-      brand: "dior",
       name: "Black Satin Column Gown with Crystal Straps",
-      price: 8900,
-      discount: 7565,
+      price: "8,900",
+      discount: "7,565",
       image:
         "https://media.gettyimages.com/id/1952401500/photo/paris-france-carla-bruni-attends-the-dior-haute-couture-show-during-paris-fashion-week-spring.jpg?s=612x612&w=0&k=20&c=PuZVVs0vSp4GnESW2dwZ_7f0lsdjN5MLn6aBbSl5j4E=",
       desc: "Sleek black satin gown with crystal-embellished shoulder straps.",
     },
     {
       id: 13,
-      brand: "dior",
       name: "Linen Shirt Dress with Contrasting Belt",
-      price: 3700,
-      discount: 3145,
+      price: "3,700",
+      discount: "3,145",
       image:
         "https://media.gettyimages.com/id/2158486275/photo/jennifer-lopez-at-christian-dior-fall-2024-couture-show-at-christian-dior-haute-couture-fall.jpg?s=612x612&w=0&k=20&c=j0hciMqWOa6hHlGRS8bLkqeMlBRrgg58v1m4VGi5H1M=",
       desc: "Crisp linen shirt dress with contrasting waist belt and relaxed fit.",
     },
     {
       id: 14,
-      brand: "dior",
       name: "Beaded Chiffon Gown with Cape Overlay",
-      price: 12500,
-      discount: 10625,
+      price: "12,500",
+      discount: "10,625",
       image:
         "https://media.gettyimages.com/id/1952384386/photo/paris-france-heart-evangelista-attends-the-christian-dior-haute-couture-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=949C4FaOhMCfV9RVgnpRTed8Hsmr0eWRwJTBXY932Po=",
       desc: "Ethereal beaded chiffon gown with dramatic cape overlay detail.",
     },
     {
       id: 15,
-      brand: "dior",
       name: "Haute Rouge Coat Gown",
-      price: 5900,
-      discount: 5015,
+      price: "5,900",
+      discount: "5,015",
       image:
         "https://imgs.search.brave.com/go6HkBUlXH4q3kG7gJWS7U-TVzIBQ6tAyMHAt7tug80/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/c3BvdHRlZC1hdC10/aGUtY2hyaXN0aWFu/LWRpb3ItZncyNC1z/aG93LWF0LXBhcmlz/LWZhc2hpb24tdjAt/eXZpd3JjOXg4N2xj/MS5wbmc_d2lkdGg9/MTI4MyZmb3JtYXQ9/cG5nJmF1dG89d2Vi/cCZzPTgxNmM0YjAw/NGJhMjFlM2EwYzg1/YTMxMjJkYzU0NzFk/YWNlYWNkMWQ",
       desc: "Classic tweed set with cropped jacket and matching skirt with gold accents.",
     },
     {
       id: 16,
-      brand: "dior",
       name: "Velvet Halter Gown with Open Back",
-      price: 7800,
-      discount: 6630,
+      price: "7,800",
+      discount: "6,630",
       image:
         "https://media.gettyimages.com/id/2159019445/photo/paris-france-deva-cassel-attends-the-christian-dior-haute-couture-fall-winter-2024-2025-show.jpg?s=612x612&w=0&k=20&c=rSEuWghJSPKy3bmgtbCfC7zOecEtzWf-T8vVkz96xzU=",
       desc: "Dramatic velvet halter gown with elegant open back design.",
@@ -208,7 +200,7 @@ export default function ProductDetails() {
       price: "4,800",
       discount: "4,100",
       image:
-        "https://media.gettyimages.com/id/2173358336/photo/milan-italy-jessica-chastain-attends-the-gucci-womens-spring-summer-2025-fashion-show-during.jpg?s=612x612&w=0&k=20&c=hQekuCNpC65F4UcWTfsOL0e71SfqLG9d984ml3O6lAo=",
+        "https://assets.vogue.com/photos/67befe8854b1d84aed53532d/master/w_1920,c_limit/00004-gucci-fall-2025-ready-to-wear-credit-brand.jpg",
       desc: "Intricate beaded dress with delicate sheer overlay and vintage glamour.",
     },
     {

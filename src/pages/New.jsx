@@ -21,7 +21,7 @@ export default function NewCollection() {
       brand: "dior",
       name: "Beaded Chiffon Gown with Cape Overlay",
       price: "12,500",
-      discount: 10625,
+      discount: "10,625",
       image:
         "https://media.gettyimages.com/id/1952384386/photo/paris-france-heart-evangelista-attends-the-christian-dior-haute-couture-spring-summer-2024.jpg?s=612x612&w=0&k=20&c=949C4FaOhMCfV9RVgnpRTed8Hsmr0eWRwJTBXY932Po=",
       desc: "Ethereal beaded chiffon gown with dramatic cape overlay detail.",
@@ -31,7 +31,7 @@ export default function NewCollection() {
       brand: "dior",
       name: "Velvet Halter Gown with Open Back",
       price: "7,800",
-      discount: 6630,
+      discount: "6,630",
       image:
         "https://media.gettyimages.com/id/2159019445/photo/paris-france-deva-cassel-attends-the-christian-dior-haute-couture-fall-winter-2024-2025-show.jpg?s=612x612&w=0&k=20&c=rSEuWghJSPKy3bmgtbCfC7zOecEtzWf-T8vVkz96xzU=",
       desc: "Dramatic velvet halter gown with elegant open back design.",

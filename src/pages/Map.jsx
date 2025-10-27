@@ -31,7 +31,11 @@ export default function MapPing() {
           <CircleMarker
             center={[11.5564, 104.9282]}
             radius={radius}
-            pathOptions={{ color: "red", fillColor: "red", fillOpacity: 0.3 }}
+            pathOptions={{
+              color: "green",
+              fillColor: "green",
+              fillOpacity: 0.3,
+            }}
           />
         </MapContainer>
       </div>
@@ -59,14 +63,14 @@ export default function MapPing() {
         <div data-aos="fade-left">
           <span className="font-bold">Google Map Link: </span>
           <Link to={"https://maps.app.goo.gl/J6DgZ4msqMwnUyG79"}>
-            <span className="font-instrumentsans">
+            <span className="font-instrumentsans hover:underline">
               https://maps.app.goo.gl/J6DgZ4msqMwnUyG79
             </span>
           </Link>
         </div>
         <div data-aos="fade-left">
           <span className="font-bold">Phone: </span>
-          <span className="font-instrumentsans">+855 126 346 629</span>
+          <span className="font-instrumentsans">+855 126 345 629</span>
         </div>
       </div>
     </div>

@@ -96,12 +96,12 @@ export default function Nav() {
           <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
-                src="/Logo/L'Essence.png"
+                src="/Logo/L'ESSENCE.png"
                 className="w-full h-full object-cover"
               />
             </div>
             <h1 className="text-2xl md:text-4xl font-bold font-josefinsans pt-4">
-              L'Essence
+              L'ESSENCE
             </h1>
           </HashLink>
         </div>
@@ -491,12 +491,12 @@ export default function Nav() {
           <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[60px] h-[60px] overflow-hidden">
               <img
-                src="/Logo/L'Essence.png"
+                src="/Logo/L'ESSENCE.png"
                 className="w-full h-full object-cover"
               />
             </div>
             <h1 className="text-2xl font-bold font-josefinsans pt-3">
-              L'Essence
+              L'ESSENCE
             </h1>
           </HashLink>
         </div>
@@ -515,7 +515,9 @@ export default function Nav() {
               search ? "-translate-x-full" : "translate-x-0"
             }`}
           >
-            <div className="text-3xl">Looking for something?</div>
+            <div className="text-3xl text-center px-4">
+              Looking for something?
+            </div>
             <div className="w-full flex justify-center p-10">
               <input
                 type="text"
@@ -613,12 +615,12 @@ export default function Nav() {
             >
               <div className="w-[60px] h-[60px] overflow-hidden">
                 <img
-                  src="/Logo/L'Essence.png"
+                  src="/Logo/L'ESSENCE.png"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h1 className="text-2xl font-bold font-josefinsans pt-3">
-                L'Essence
+                L'ESSENCE
               </h1>
             </HashLink>
           </div>
