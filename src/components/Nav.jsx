@@ -96,7 +96,7 @@ export default function Nav() {
           <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[80px] h-[80px] overflow-hidden">
               <img
-                src="/Logo/L'ESSENCE.png"
+                src="/Logo/LESSENCE.png"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -491,7 +491,7 @@ export default function Nav() {
           <HashLink smooth to="/#slide" className="flex items-center gap-2">
             <div className="w-[60px] h-[60px] overflow-hidden">
               <img
-                src="/Logo/L'ESSENCE.png"
+                src="/Logo/LESSENCE.png"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -615,7 +615,7 @@ export default function Nav() {
             >
               <div className="w-[60px] h-[60px] overflow-hidden">
                 <img
-                  src="/Logo/L'ESSENCE.png"
+                  src="/Logo/LESSENCE.png"
                   className="w-full h-full object-cover"
                 />
               </div>
