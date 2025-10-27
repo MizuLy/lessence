@@ -98,18 +98,25 @@ export default function NewCollection() {
             >
               <Link to={`/product/${p.id}`}>
                 {/* Fixed aspect ratio box */}
-                <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">
+                <div className="w-full h-64 sm:h-72 md:h-80 lg:h-96 relative overflow-hidden">
                   <img
                     src={p.image}
                     alt={p.name}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover hover:scale-110 duration-150"
                   />
                 </div>
                 <div className="p-4">
                   <h2 className="font-semibold font-instrumentsans text-lg text-ellipsis overflow-hidden whitespace-nowrap">
                     {p.name}
                   </h2>
-                  <p className="text-green-500 font-medium mt-1">${p.price}</p>
+                  <div className="flex justify-center items-center gap-x-2">
+                    <p className="text-green-500 font-medium mt-1">
+                      ${p.discount}
+                    </p>
+                    <p className="text-gray-400 font-medium line-through text-sm">
+                      ${p.price}
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
