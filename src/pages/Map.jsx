@@ -25,6 +25,7 @@ export default function MapPing() {
           center={[11.5564, 104.9282]}
           zoom={13}
           className="w-full h-full"
+          scrollWheelZoom="center"
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <Marker position={[11.5564, 104.9282]} />
