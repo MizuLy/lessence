@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { CiUser } from "react-icons/ci";
+import { CiUser, CiReceipt } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { IoMenu, IoClose, IoCartOutline } from "react-icons/io5";
@@ -10,6 +10,7 @@ export default function Nav() {
   const [search, setSearch] = useState(true);
   const [cart, setCart] = useState(true);
   const [account, setAccount] = useState(true);
+  const [receipt, setReceipt] = useState(true);
   const [count, setCount] = useState(1);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
@@ -228,6 +229,19 @@ export default function Nav() {
           <Link to="/cart" className="hover:text-gray-500 duration-150">
             <IoCartOutline size={25} />
           </Link>
+
+          {/* Receipt */}
+          <div
+            onClick={() => {
+              setMenu(true);
+              setReceipt(!receipt);
+            }}
+            className="text-2xl hover:text-gray-500 cursor-pointer flex items-center"
+          >
+            <Link to={"/order"}>
+              <CiReceipt size={25} />
+            </Link>
+          </div>
 
           {/* Account */}
           <div
@@ -677,6 +691,17 @@ export default function Nav() {
               className="text-2xl hover:text-gray-500 cursor-pointer flex items-center"
             >
               <CiUser size={25} />
+            </div>
+            <div
+              onClick={() => {
+                setMenu(true);
+                setReceipt(!receipt);
+              }}
+              className="text-2xl hover:text-gray-500 cursor-pointer flex items-center"
+            >
+              <Link to={"/order"}>
+                <CiReceipt size={25} />
+              </Link>
             </div>
           </div>
         </div>

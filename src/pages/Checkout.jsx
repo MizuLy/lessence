@@ -23,7 +23,7 @@ export default function Checkout() {
     addOrder(form); // Save the order in context
     setShowPopup(true);
 
-    setTimeout(() => setShowPopup(false), 3000);
+    setTimeout(() => setShowPopup(false), 1000);
     setForm({ name: "", email: "", address: "" });
   };
 

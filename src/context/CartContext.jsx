@@ -1,10 +1,24 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
-  const [orders, setOrders] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const saved = localStorage.getItem('cart');
+    return saved ? JSON.parse(saved) : [];
+  });
+  const [orders, setOrders] = useState(() => {
+    const saved = localStorage.getItem('orders');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
+
+  useEffect(() => {
+    localStorage.setItem('orders', JSON.stringify(orders));
+  }, [orders]);
 
   const addToCart = (product, size) => {
     const price = Number(product.discount.toString().replace(/,/g, ""));
@@ -52,6 +66,10 @@ export const CartProvider = ({ children }) => {
     setCart([]); // Clear cart after order
   };
 
+  const removeOrder = (orderId) => {
+    setOrders((prev) => prev.filter(order => order.id !== orderId));
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -61,6 +79,7 @@ export const CartProvider = ({ children }) => {
         updateQuantity,
         removeFromCart,
         addOrder,
+        removeOrder,
       }}
     >
       {children}

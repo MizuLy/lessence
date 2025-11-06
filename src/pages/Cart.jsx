@@ -13,7 +13,7 @@ export default function Cart() {
 
   return (
     <div className="p-6 min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6 text-center">Wishlist</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Cart</h1>
 
       {cart.length === 0 ? (
         <div className="text-center mt-10">
